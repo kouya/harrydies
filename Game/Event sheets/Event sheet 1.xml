@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="583847418750693">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="995040015383835" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="384991433588469" type="Player">
+                    <param id="0" name="Object">PlayerBox</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
