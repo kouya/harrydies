@@ -25,8 +25,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1706</width>
+        <height>960</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -35,7 +35,7 @@
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
-        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen in browser">Scale outer</prop>
         <prop name="Fullscreen scaling">High quality</prop>
         <prop name="Loader style">Construct 2 splash</prop>
         <prop name="Orientations">Any</prop>
@@ -49,51 +49,85 @@
     <object-folder>
         <object-type name="UnderwaterBackground" sid="524989292469789">
             <plugin id="TiledBg" />
-            <texture original-source="X:\Documents\Super_Torture_Box\Artwork\background-1.jpg" />
+            <texture original-source="X:\Documents\Super_Torture_Box\Artwork\Underwater\background-underwater.jpg" />
         </object-type>
-        <object-type name="UnderwaterTilemap" sid="383070294496136">
+        <object-type name="Keyboard" sid="160869588242583">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="UnderwaterTilemap" sid="500570706348586">
             <plugin id="Tilemap" />
             <behaviors>
-                <behavior-type name="Solid" sid="575262488285076">
+                <behavior-type name="Solid" sid="296383188199312">
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
             <texture original-source="X:\Documents\Super_Torture_Box\Artwork\Underwater\tiles.png" />
             <tiles />
         </object-type>
-        <object-type name="Player" sid="842781609577302">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="802559866700383" speed="2">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="PlayerBox" sid="283809732570136">
+        <object-type name="PlayerBox" sid="324174469555609">
             <plugin id="Sprite" />
             <behaviors>
-                <behavior-type name="Platform" sid="905729107822537">
+                <behavior-type name="Platform" sid="953067199299308">
                     <behavior id="Platform" />
                 </behavior-type>
-                <behavior-type name="ScrollTo" sid="918883083019358">
+                <behavior-type name="ScrollTo" sid="474302818427854">
                     <behavior id="scrollto" />
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="867699127130162" speed="5">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249058291435172" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="X:\Documents\Super_Torture_Box\Artwork\Player\player_box.png" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Keyboard" sid="160869588242583">
-            <plugin id="Keyboard" />
+        <object-type name="Player" sid="955695507379594">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="8" loop="1" name="Idle" pingpong="0" repeatcount="1" repeatto="0" sid="985571773985372" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                </animation>
+                <animation framecount="12" loop="1" name="Moving" pingpong="0" repeatcount="1" repeatto="0" sid="579021059018304" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984615" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984615" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984615" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984615" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984615" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                </animation>
+                <animation framecount="8" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="745750150851568" speed="9">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.984848" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UnderwaterBackObjects" sid="201261967057601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="706137645480357" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
@@ -101,7 +135,8 @@
         <layout>Underwater.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>PlayerControl.xml</event-sheet>
+        <event-sheet>Underwater.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
