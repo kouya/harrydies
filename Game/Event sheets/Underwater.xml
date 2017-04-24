@@ -3,6 +3,25 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
-        <include>PlayerControl</include>
+        <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
+        <include>Player</include>
+        <include>UI</include>
+        <comment>Reset player position after death</comment>
+        <event-block any="1" sid="513213009655476">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="208509483397535" type="Player">
+                    <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
+                </condition>
+                <condition id="-4" name="Is outside layout" sid="632043113449090" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="788232775984632" type="PlayerBox">
+                    <param id="0" name="X">224</param>
+                </action>
+                <action id="-2" name="Set Y" sid="325240250727006" type="PlayerBox">
+                    <param id="0" name="Y">7552</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
