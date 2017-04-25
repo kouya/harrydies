@@ -39,6 +39,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/UnderwaterBoss/" />
         <folder expanded="1" path="animation-folder/EnemyBlockerfish/" />
         <folder expanded="1" path="animation-folder/EnemyElectricFish/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/EnemyUnsuspiciousFish/" />
     </folders-expanded>
 </c2uistate>

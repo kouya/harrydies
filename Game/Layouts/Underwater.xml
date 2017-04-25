@@ -1021,6 +1021,79 @@
                 </effect-type>
             </effects>
         </layer>
+        <layer name="Story" sid="104217000182862">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0.9</x>
+                <y>0.9</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="StoryText" uid="67">
+                    <properties>
+                        <text>The dragon has been enslaved by the evil princess. We must defeat the princess and save him!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>170</x>
+                        <y>6250</y>
+                        <z>0</z>
+                        <width>634</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="StoryText" uid="68">
+                    <properties>
+                        <text>Our journey starts in the dark abyss of death. We must reach the surface and find our way to the mountain.</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>170</x>
+                        <y>6416</y>
+                        <z>0</z>
+                        <width>634</width>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
         <layer name="Main" sid="865761663124264">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -1154,8 +1227,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>575</x>
-                        <y>7182</y>
+                        <x>591</x>
+                        <y>7176</y>
                         <z>0</z>
                         <width>63</width>
                         <height>66</height>
@@ -1525,8 +1598,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3326</x>
-                        <y>6762</y>
+                        <x>1268</x>
+                        <y>6669</y>
                         <z>0</z>
                         <width>130</width>
                         <height>100</height>
@@ -1554,8 +1627,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3320</x>
-                        <y>6524</y>
+                        <x>1043</x>
+                        <y>6663</y>
                         <z>0</z>
                         <width>130</width>
                         <height>90</height>
@@ -1566,7 +1639,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite" uid="66">
+                <instance type="EnemyUnsuspiciousFish" uid="66">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1583,8 +1656,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3323</x>
-                        <y>7100</y>
+                        <x>1449</x>
+                        <y>6651</y>
                         <z>0</z>
                         <width>130</width>
                         <height>74</height>

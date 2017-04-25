@@ -882,7 +882,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="317658002319532">
+        <object-type name="EnemyUnsuspiciousFish" sid="317658002319532">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="264801722337696">
@@ -959,6 +959,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="StoryText" sid="727536226011750">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
