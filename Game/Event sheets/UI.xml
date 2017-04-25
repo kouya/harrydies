@@ -3,13 +3,32 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>UI</name>
     <events>
+        <event-block sid="227638714329279">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="720597737933681" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set web font" sid="166022655377560" type="Score">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="137514274299834" type="Diamonds">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="146594345335708" type="StoryText">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="166981465584971">
             <conditions>
                 <condition id="-1" name="Every tick" sid="243878890761695" type="System" />
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="477970088744409" type="Score">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score &amp; &quot;(Deaths: &quot; &amp; PlayerDeaths &amp; &quot;)&quot;</param>
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score &amp; &quot; (Deaths: &quot; &amp; PlayerDeaths &amp; &quot;)&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="591607919286224" type="Diamonds">
                     <param id="0" name="Text">&quot;Diamonds: &quot; &amp; Diamonds</param>

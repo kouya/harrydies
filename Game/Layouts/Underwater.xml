@@ -1041,7 +1041,7 @@
                     <properties>
                         <text>The dragon has been enslaved by the evil princess. We must defeat the princess and save him!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
+                        <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1056,7 +1056,7 @@
                         <y>6250</y>
                         <z>0</z>
                         <width>634</width>
-                        <height>150</height>
+                        <height>95</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1068,7 +1068,7 @@
                     <properties>
                         <text>Our journey starts in the dark abyss of death. We must reach the surface and find our way to the mountain.</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-32,400,0</font>
+                        <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -1080,10 +1080,10 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>170</x>
-                        <y>6416</y>
+                        <y>6350</y>
                         <z>0</z>
                         <width>634</width>
-                        <height>150</height>
+                        <height>92</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -1690,6 +1690,35 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="EnemyBlockerfish" uid="69">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>4</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1294</x>
+                        <y>6527</y>
+                        <z>0</z>
+                        <width>130</width>
+                        <height>100</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1727,7 +1756,7 @@
                         <x>10</x>
                         <y>10</y>
                         <z>0</z>
-                        <width>500</width>
+                        <width>900</width>
                         <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
