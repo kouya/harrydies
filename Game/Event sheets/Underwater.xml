@@ -6,13 +6,16 @@
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <include>Player</include>
         <include>UI</include>
+        <include>Contraptions</include>
         <comment>Reset player position after death</comment>
         <event-block any="1" sid="513213009655476">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="208509483397535" type="Player">
                     <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
                 </condition>
-                <condition id="-4" name="Is outside layout" sid="632043113449090" type="PlayerBox" />
+                <condition id="0" name="On collision with another object" sid="161813087326986" type="Player">
+                    <param id="0" name="Object">Spikes</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="788232775984632" type="PlayerBox">
@@ -20,6 +23,36 @@
                 </action>
                 <action id="-2" name="Set Y" sid="325240250727006" type="PlayerBox">
                     <param id="0" name="Y">7552</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="624184673162784">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="824048748074521" type="PlayerBox" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="422456714605410" type="PlayerBox">
+                    <param id="0" name="X">224</param>
+                </action>
+                <action id="-2" name="Set Y" sid="666411313180310" type="PlayerBox">
+                    <param id="0" name="Y">7552</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="165367582292754">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="919781388685327" type="Player">
+                    <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="328931726002557" type="System">
+                    <param id="0" name="Variable">PlayerDeaths</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="387276415926948" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

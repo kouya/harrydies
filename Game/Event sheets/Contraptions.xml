@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Contraptions</name>
+    <events>
+        <event-block sid="346427754732632">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="536549261800356" type="Player">
+                    <param id="0" name="Object">Spikes</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="956171462844999" type="System">
+                    <param id="0" name="Variable">PlayerDeaths</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="872849690734877" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="369092876099335" type="Spikes">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="874082318457356" type="PlayerBox">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="711466390769806" type="Player">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="164823135674116" type="PlayerBox">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="532737447057875" type="System">
+                    <param id="0" name="Seconds">0.666</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="287233552156305" type="PlayerBox">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="857316201995341" type="Player">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="293468498501268" type="PlayerBox">
+                    <param id="0" name="Input">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="979680319212596">
+            <conditions>
+                <condition id="-9" name="Is visible" sid="777624375522605" type="Spikes" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="352647130745336" type="System">
+                    <param id="0" name="Seconds">3.14</param>
+                </action>
+                <action id="-15" name="Set visible" sid="443342493474866" type="Spikes">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

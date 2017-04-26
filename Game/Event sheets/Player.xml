@@ -181,9 +181,6 @@
         <event-block any="1" sid="970229263377159">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="607201083394643" type="PlayerBox" />
-                <condition id="0" name="On collision with another object" sid="934165271876535" type="Player">
-                    <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
-                </condition>
             </conditions>
             <actions>
                 <action id="-10" name="Add to" sid="267094927570483" type="System">

@@ -963,6 +963,14 @@
         <object-type name="StoryText" sid="727536226011750">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Spikes" sid="788669385315772">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="172489074891300" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -972,6 +980,7 @@
         <event-sheet>Player.xml</event-sheet>
         <event-sheet>Underwater.xml</event-sheet>
         <event-sheet>UI.xml</event-sheet>
+        <event-sheet>Contraptions.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
