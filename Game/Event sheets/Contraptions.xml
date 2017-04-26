@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Contraptions</name>
     <events>
+        <variable constant="0" name="JumpPadsActive" sid="536643187242013" static="0" type="number">0</variable>
         <event-block sid="346427754732632">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="536549261800356" type="Player">
@@ -56,6 +57,162 @@
                     <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="493608888862495">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="814896176049065" type="PlayerBox">
+                    <param id="0" name="Object">JumpPad</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="899328407448602">
+                    <conditions>
+                        <condition id="-11" name="Is within angle" sid="494457610112392" type="JumpPad">
+                            <param id="0" name="Within">0.5</param>
+                            <param id="1" name="Angle">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="497189029243358" type="PlayerBox">
+                            <param id="0" name="Vector Y">-2000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="695260383985322">
+                    <conditions>
+                        <condition id="-11" name="Is within angle" sid="546596514446515" type="JumpPad">
+                            <param id="0" name="Within">0.5</param>
+                            <param id="1" name="Angle">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="232902680294676" type="System">
+                            <param id="0" name="Variable">JumpPadsActive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="805877060724636" type="PlayerBox">
+                            <param id="0" name="Max Speed">2000</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="731221918481792" type="PlayerBox">
+                            <param id="0" name="Deceleration">100</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="389818304596480" type="PlayerBox">
+                            <param id="0" name="Vector X">-2000</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="798382693640282" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="620437140111192">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="578880106550105" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="3" name="Set deceleration" sid="376456148811030" type="PlayerBox">
+                                    <param id="0" name="Deceleration">1500</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="928946239626824" type="PlayerBox">
+                                    <param id="0" name="Max Speed">400</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="744929855717577" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="770117867554514">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="870366814403021" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="659973421976600" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="231451422581201">
+                    <conditions>
+                        <condition id="-11" name="Is within angle" sid="951270383626202" type="JumpPad">
+                            <param id="0" name="Within">0.5</param>
+                            <param id="1" name="Angle">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="425603073983800" type="PlayerBox">
+                            <param id="0" name="Vector Y">2000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="760511512476934">
+                    <conditions>
+                        <condition id="-11" name="Is within angle" sid="625746532035075" type="JumpPad">
+                            <param id="0" name="Within">0.5</param>
+                            <param id="1" name="Angle">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="940156352890867" type="System">
+                            <param id="0" name="Variable">JumpPadsActive</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Platform" id="1" name="Set max speed" sid="942625809774522" type="PlayerBox">
+                            <param id="0" name="Max Speed">2000</param>
+                        </action>
+                        <action behavior="Platform" id="3" name="Set deceleration" sid="264575202305301" type="PlayerBox">
+                            <param id="0" name="Deceleration">100</param>
+                        </action>
+                        <action behavior="Platform" id="8" name="Set vector X" sid="234815747585032" type="PlayerBox">
+                            <param id="0" name="Vector X">2000</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="119412577576708" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="929027245680533">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="438220070929874" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="3" name="Set deceleration" sid="240701519996471" type="PlayerBox">
+                                    <param id="0" name="Deceleration">1500</param>
+                                </action>
+                                <action behavior="Platform" id="1" name="Set max speed" sid="842755576201173" type="PlayerBox">
+                                    <param id="0" name="Max Speed">400</param>
+                                </action>
+                                <action id="-11" name="Subtract from" sid="245568535185178" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="493859817214797">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="501034518387025" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="654732454682190" type="System">
+                                    <param id="0" name="Variable">JumpPadsActive</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>
