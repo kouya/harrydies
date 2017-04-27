@@ -3496,7 +3496,7 @@
                                 <gravity>2000</gravity>
                                 <max-fall-speed>1500</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
-                                <jump-sustain>217</jump-sustain>
+                                <jump-sustain>230</jump-sustain>
                                 <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
