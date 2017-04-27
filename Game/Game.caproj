@@ -1276,6 +1276,23 @@
         <object-type name="BlockBreakersText" sid="267753102897456">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Dynamite" sid="841456679981449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471463139766276" speed="2">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="X:\Projects\Super_Torture_Box\Artwork\Common\dynamite.png">
+                        <collision-poly>
+                            <point x="0.710938" y="0.00195313" />
+                            <point x="0.862305" y="0" />
+                            <point x="1" y="0.228516" />
+                            <point x="0.351563" y="1" />
+                            <point x="0.193359" y="1" />
+                            <point x="0.0351563" y="0.802734" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

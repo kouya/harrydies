@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
+        <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
+        <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <include>Player</include>
         <include>UI</include>
@@ -35,10 +37,10 @@
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="788232775984632" type="PlayerBox">
-                    <param id="0" name="X">224</param>
+                    <param id="0" name="X">PlayerSpawnX</param>
                 </action>
                 <action id="-2" name="Set Y" sid="325240250727006" type="PlayerBox">
-                    <param id="0" name="Y">7552</param>
+                    <param id="0" name="Y">PlayerSpawnY</param>
                 </action>
             </actions>
         </event-block>
@@ -48,12 +50,57 @@
             </conditions>
             <actions>
                 <action id="-1" name="Set X" sid="422456714605410" type="PlayerBox">
-                    <param id="0" name="X">224</param>
+                    <param id="0" name="X">PlayerSpawnX</param>
                 </action>
                 <action id="-2" name="Set Y" sid="666411313180310" type="PlayerBox">
-                    <param id="0" name="Y">7552</param>
+                    <param id="0" name="Y">PlayerSpawnY</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="294363940862730">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="851221663992634" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">1632</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="349252583122793" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">1888</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="426609919100618" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">6272</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="385235938660079" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">6144</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="887632222097489" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">1440</param>
+                </action>
+                <action id="-9" name="Set value" sid="509094351781198" type="System">
+                    <param id="0" name="Variable">PlayerSpawnY</param>
+                    <param id="1" name="Value">6208</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="205066499272953">
+                    <conditions>
+                        <condition id="-13" name="Pick nth instance" sid="574210924125162" type="System">
+                            <param id="0" name="Object">StoryText</param>
+                            <param id="1" name="Instance">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="448461226787295" type="StoryText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

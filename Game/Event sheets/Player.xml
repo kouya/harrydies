@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
-        <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
+        <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">1</variable>
         <comment>Update player sprite</comment>
         <event-block sid="335561993586300">
             <conditions>
@@ -204,6 +204,20 @@
                 <action id="-9" name="Destroy" sid="990597931097929" type="Diamond" />
                 <action id="-10" name="Add to" sid="679489669952108" type="System">
                     <param id="0" name="Variable">Diamonds</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="164781968107002">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="391146675674088" type="Player">
+                    <param id="0" name="Object">Dynamite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="159848915435720" type="Dynamite" />
+                <action id="-10" name="Add to" sid="324136777910888" type="System">
+                    <param id="0" name="Variable">BlockBreakers</param>
                     <param id="1" name="Value">1</param>
                 </action>
             </actions>
