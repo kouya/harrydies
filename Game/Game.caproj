@@ -1230,6 +1230,52 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="DiamondStatic" sid="990660798948548">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="190092232390013" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.203125" y="0.138021" />
+                            <point x="0.778646" y="0.140625" />
+                            <point x="1" y="0.367188" />
+                            <point x="0.5" y="0.979167" />
+                            <point x="0" y="0.351563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.203125" y="0.138021" />
+                            <point x="0.778646" y="0.140625" />
+                            <point x="1" y="0.367188" />
+                            <point x="0.5" y="0.979167" />
+                            <point x="0" y="0.351563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.203125" y="0.138021" />
+                            <point x="0.778646" y="0.140625" />
+                            <point x="1" y="0.367188" />
+                            <point x="0.5" y="0.979167" />
+                            <point x="0" y="0.351563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.203125" y="0.138021" />
+                            <point x="0.778646" y="0.140625" />
+                            <point x="1" y="0.367188" />
+                            <point x="0.5" y="0.979167" />
+                            <point x="0" y="0.351563" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BlockBreakersText" sid="267753102897456">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
