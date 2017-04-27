@@ -15,6 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet order="2">Underwater</event-sheet>
         <event-sheet order="3">Contraptions</event-sheet>
         <event-sheet order="4">UI</event-sheet>
+        <event-sheet order="5">Enemies</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -43,5 +44,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/EnemyUnsuspiciousFish/" />
         <folder expanded="1" path="animation-folder/Spikes/" />
         <folder expanded="1" path="animation-folder/JumpPad/" />
+        <folder expanded="1" path="animation-folder/EnemyElectricFish2/" />
+        <folder expanded="1" path="animation-folder/EnemyBlockerfish2/" />
     </folders-expanded>
 </c2uistate>
