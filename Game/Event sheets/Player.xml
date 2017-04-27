@@ -5,7 +5,7 @@
     <events>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
-        <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">1</variable>
+        <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
         <comment>Update player sprite</comment>
         <event-block sid="335561993586300">
             <conditions>
