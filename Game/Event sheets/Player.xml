@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
+        <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
+        <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
+        <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
         <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
@@ -184,13 +187,9 @@
                 <condition id="-4" name="Is outside layout" sid="607201083394643" type="PlayerBox" />
             </conditions>
             <actions>
-                <action id="-10" name="Add to" sid="267094927570483" type="System">
-                    <param id="0" name="Variable">PlayerDeaths</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-11" name="Subtract from" sid="719581366716841" type="System">
-                    <param id="0" name="Variable">Score</param>
-                    <param id="1" name="Value">1</param>
+                <action id="0" name="Call function" sid="323726997464527" type="Function">
+                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
         </event-block>
@@ -219,6 +218,74 @@
                 <action id="-10" name="Add to" sid="324136777910888" type="System">
                     <param id="0" name="Variable">BlockBreakers</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="686763017496797">
+            <conditions>
+                <condition id="0" name="On function" sid="669352822615944" type="Function">
+                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="982382142054246" type="System">
+                    <param id="0" name="Variable">PlayerDeaths</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="854043431135986" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="453666420413491" type="PlayerBox">
+                    <param id="0" name="Input">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="811683459247319" type="Player">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="610952905295628" type="PlayerBox">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-1" name="Set X" sid="667615835913041" type="PlayerBox">
+                    <param id="0" name="X">PlayerSpawnX</param>
+                </action>
+                <action id="-2" name="Set Y" sid="838645424822624" type="PlayerBox">
+                    <param id="0" name="Y">PlayerSpawnY</param>
+                </action>
+                <action id="-15" name="Set visible" sid="560572227128529" type="PlayerDeathBackdrop">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="353823533917665" type="PlayerDead">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="292139302549452" type="PlayerDeathsText">
+                    <param id="0" name="Text">&quot;x&quot; &amp; PlayerDeaths</param>
+                </action>
+                <action id="-15" name="Set visible" sid="770854395823239" type="PlayerDeathsText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="776682122988869" type="System">
+                    <param id="0" name="Seconds">0.666</param>
+                </action>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="242349431581260" type="PlayerBox">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="161987414781032" type="Player">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action behavior="Platform" id="0" name="Set ignoring input" sid="724659546260272" type="PlayerBox">
+                    <param id="0" name="Input">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="817263305660921" type="System">
+                    <param id="0" name="Seconds">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="108788212893863" type="PlayerDead">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="176103954534694" type="PlayerDeathsText">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="331885289226772" type="PlayerDeathBackdrop">
+                    <param id="0" name="Visibility">0</param>
                 </action>
             </actions>
         </event-block>
