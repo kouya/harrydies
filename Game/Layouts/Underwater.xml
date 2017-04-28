@@ -2787,11 +2787,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3872</x>
-                        <y>6848</y>
+                        <x>3869.246582031</x>
+                        <y>6843.869628906</y>
                         <z>0</z>
-                        <width>130</width>
-                        <height>90</height>
+                        <width>94.205444336</width>
+                        <height>65.219154358</height>
                         <depth>0</depth>
                         <hotspotX>0.07692308</hotspotX>
                         <hotspotY>0.166666672</hotspotY>
@@ -5487,8 +5487,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>128</x>
-                        <y>7840</y>
+                        <x>-96</x>
+                        <y>7424</y>
                         <z>0</z>
                         <width>22</width>
                         <height>34</height>
@@ -5536,6 +5536,35 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyElectricFish2" uid="240">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3264</x>
+                        <y>6496</y>
+                        <z>0</z>
+                        <width>94.205444336</width>
+                        <height>65.219154358</height>
+                        <depth>0</depth>
+                        <hotspotX>0.07692308</hotspotX>
+                        <hotspotY>0.166666672</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
