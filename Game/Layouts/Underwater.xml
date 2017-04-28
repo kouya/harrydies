@@ -1999,9 +1999,21 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Solid">
+                        <behavior-instance type="Platform">
                             <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -2009,14 +2021,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2963</x>
-                        <y>7304</y>
+                        <x>480</x>
+                        <y>7072</y>
                         <z>0</z>
-                        <width>130</width>
-                        <height>74</height>
+                        <width>42.413665771</width>
+                        <height>24.143163681</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -4991,6 +5003,460 @@
                         <hotspotX>0.507936537</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>-0.694006979</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BoundingBox" uid="227">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>32</x>
+                        <y>7072</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="228">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>7264</y>
+                        <z>0</z>
+                        <width>42.413665771</width>
+                        <height>24.143163681</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="226">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1408</x>
+                        <y>7392</y>
+                        <z>0</z>
+                        <width>42.413665771</width>
+                        <height>24.143163681</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="229">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2517.954589844</x>
+                        <y>7352.995117188</y>
+                        <z>0</z>
+                        <width>103.891838074</width>
+                        <height>59.138431549</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="230">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3072</x>
+                        <y>6368</y>
+                        <z>0</z>
+                        <width>73.462615967</width>
+                        <height>41.817184448</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="231">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2496</x>
+                        <y>6688</y>
+                        <z>0</z>
+                        <width>73.462615967</width>
+                        <height>41.817184448</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="232">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>640</x>
+                        <y>6880</y>
+                        <z>0</z>
+                        <width>42.413665771</width>
+                        <height>24.143163681</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="233">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>100</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1992.784179688</x>
+                        <y>6272</y>
+                        <z>0</z>
+                        <width>59.98197937</width>
+                        <height>34.14358902</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="234">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>50</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>544</x>
+                        <y>7616</y>
+                        <z>0</z>
+                        <width>42.413665771</width>
+                        <height>24.143163681</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="235">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>200</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3744</x>
+                        <y>7296</y>
+                        <z>0</z>
+                        <width>73.462615967</width>
+                        <height>41.817184448</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="EnemyUnsuspiciousFish" uid="236">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <direction>right</direction>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Platform">
+                            <properties>
+                                <max-speed>150</max-speed>
+                                <acceleration>1500</acceleration>
+                                <deceleration>1500</deceleration>
+                                <jump-strength>650</jump-strength>
+                                <gravity>0</gravity>
+                                <max-fall-speed>1000</max-fall-speed>
+                                <double-jump>Disabled</double-jump>
+                                <jump-sustain>0</jump-sustain>
+                                <default-controls>No</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1930.045043945</x>
+                        <y>5920</y>
+                        <z>0</z>
+                        <width>103.891838074</width>
+                        <height>59.138431549</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite" uid="237">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-128</x>
+                        <y>7392</y>
+                        <z>0</z>
+                        <width>22</width>
+                        <height>34</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>1</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>

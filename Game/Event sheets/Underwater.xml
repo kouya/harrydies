@@ -118,5 +118,78 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="628999521956229">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="175069133609718" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Instance variable">direction</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="200113114622597" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="916916371611182" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="228244482617539">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="643274042754482" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Instance variable">direction</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="706588913450092" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="607516258415095" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="374353427410044">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="457163986077032" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Object">BoundingBox</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="961640020867474" type="EnemyUnsuspiciousFish">
+                    <param id="0" name="Object">UnderwaterTilemap</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="602966583766648">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="734591333014405" type="EnemyUnsuspiciousFish">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="730099539552937" type="EnemyUnsuspiciousFish">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="325176151074610">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="246385376014568" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="679165320042412" type="EnemyUnsuspiciousFish">
+                            <param id="0" name="Instance variable">direction</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
