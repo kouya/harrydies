@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Underwater</layout>
-        <event-sheet order="1">Player</event-sheet>
+        <layout order="0">Underwater</layout>
+        <event-sheet active="1" order="1">Player</event-sheet>
         <event-sheet order="2">Underwater</event-sheet>
         <event-sheet order="3">Contraptions</event-sheet>
         <event-sheet order="4">UI</event-sheet>
@@ -49,6 +49,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/PlayerDead/" />
         <folder expanded="1" path="animation-folder/DiamondStatic/" />
         <folder expanded="1" path="animation-folder/BoundingBox/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/LightningBullet/" />
     </folders-expanded>
 </c2uistate>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
+        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
         <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
@@ -182,7 +183,7 @@
             </sub-events>
         </event-block>
         <comment>Player deaths</comment>
-        <event-block any="1" sid="970229263377159">
+        <event-block sid="970229263377159">
             <conditions>
                 <condition id="-4" name="Is outside layout" sid="607201083394643" type="PlayerBox" />
             </conditions>

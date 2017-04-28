@@ -35,22 +35,10 @@
                     <param id="0" name="Variable">PlayerSpawnY</param>
                     <param id="1" name="Value">6208</param>
                 </action>
+                <action id="-15" name="Set visible" sid="997769645434791" type="CheckpointText1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
             </actions>
-            <sub-events>
-                <event-block sid="205066499272953">
-                    <conditions>
-                        <condition id="-13" name="Pick nth instance" sid="574210924125162" type="System">
-                            <param id="0" name="Object">StoryText</param>
-                            <param id="1" name="Instance">2</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="448461226787295" type="StoryText">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
         </event-block>
         <event-block any="1" sid="542775821165829">
             <conditions>
@@ -67,12 +55,24 @@
                     <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="0" name="Call function" sid="845270493497329" type="Function">
-                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="387169754515228">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="589410617726571" type="System">
+                            <param id="0" name="Variable">CheatMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="730731850325412" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block any="1" sid="508220395412190">
             <conditions>
@@ -109,12 +109,24 @@
                     <conditions>
                         <condition id="-22" name="Else" sid="958872844112101" type="System" />
                     </conditions>
-                    <actions>
-                        <action id="0" name="Call function" sid="751656985538051" type="Function">
-                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="983220126200975">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="994939161982980" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="625696571386101" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -190,6 +202,105 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-group description="" sid="926427940836549" title="LightningFish">
+            <sub-events>
+                <event-block any="1" sid="995550375212317">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="399037777370826" type="EnemyElectricFish" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="663949278967057">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="912890882684092" type="System">
+                                    <param id="0" name="Interval (seconds)">random(3)+2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="967573395671485" type="EnemyElectricFish">
+                                    <param id="0" name="Object">LightningBullet</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="144153466517804">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="538324707361067" type="EnemyElectricFish2" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="173770585200235">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="787466868135823" type="System">
+                                    <param id="0" name="Interval (seconds)">random(3)+2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="413637183871896" type="EnemyElectricFish2">
+                                    <param id="0" name="Object">LightningBullet</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block any="1" sid="845358044398093">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="392239294321199" type="LightningBullet">
+                            <param id="0" name="Object">UnderwaterTilemap</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="555974137048897" type="LightningBullet">
+                            <param id="0" name="Object">UnderwaterJumpThroughTilemap</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="656935310049429" type="LightningBullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="592221132071356">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="856215323819988" type="LightningBullet">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="214560284520049" type="LightningBullet" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="363407075558370">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="125815366897371" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="648620570317641" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="151439036138610">
+            <conditions>
+                <condition id="-18" name="On created" sid="640904316988440" type="LightningBullet" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="732586180373709" type="LightningBullet">
+                    <param id="0" name="X">Player.X</param>
+                    <param id="1" name="Y">Player.Y</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
