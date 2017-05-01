@@ -1378,6 +1378,9 @@
         <object-type name="CheckpointText1" sid="179008358025588">
             <plugin id="Text" />
         </object-type>
+        <object-type name="CheckpointText2" sid="678879410592813">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
