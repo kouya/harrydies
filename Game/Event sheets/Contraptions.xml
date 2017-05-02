@@ -221,7 +221,7 @@
                             <param id="0" name="Vector X">2000</param>
                         </action>
                         <action id="-16" name="Wait" sid="326028601694147" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">0.6</param>
                         </action>
                         <action behavior="Platform" id="3" name="Set deceleration" sid="943909336273453" type="PlayerBox">
                             <param id="0" name="Deceleration">1500</param>
@@ -252,7 +252,7 @@
                             <param id="0" name="Vector X">-2000</param>
                         </action>
                         <action id="-16" name="Wait" sid="715338776208929" type="System">
-                            <param id="0" name="Seconds">0.5</param>
+                            <param id="0" name="Seconds">0.6</param>
                         </action>
                         <action behavior="Platform" id="3" name="Set deceleration" sid="614593460424176" type="PlayerBox">
                             <param id="0" name="Deceleration">1500</param>

@@ -73,6 +73,39 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="307896051110864">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="233247174997570" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">3328</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="702480051894638" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">3520</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="863508865953254" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">2688</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="131353139245926" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">2848</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="181704068363643" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">3488</param>
+                </action>
+                <action id="-9" name="Set value" sid="785963380190284" type="System">
+                    <param id="0" name="Variable">PlayerSpawnY</param>
+                    <param id="1" name="Value">2816</param>
+                </action>
+                <action id="-15" name="Set visible" sid="730430214379179" type="CheckpointText3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Player Death</comment>
         <event-block any="1" sid="542775821165829">
             <conditions>
