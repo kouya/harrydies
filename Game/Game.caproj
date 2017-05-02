@@ -66,7 +66,7 @@
         <object-type name="Keyboard" sid="160869588242583">
             <plugin id="Keyboard" />
         </object-type>
-        <object-type name="UnderwaterTilemap" sid="500570706348586">
+        <object-type name="Tilemap" sid="500570706348586">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Solid" sid="296383188199312">
@@ -721,7 +721,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="UnderwaterJumpThroughTilemap" sid="120877466058706">
+        <object-type name="JumpThroughTilemap" sid="120877466058706">
             <plugin id="Tilemap" />
             <behaviors>
                 <behavior-type name="Jumpthru" sid="590467200023245">

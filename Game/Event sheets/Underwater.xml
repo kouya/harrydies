@@ -258,7 +258,7 @@
                     <param id="0" name="Object">BoundingBox</param>
                 </condition>
                 <condition id="0" name="On collision with another object" sid="961640020867474" type="EnemyUnsuspiciousFish">
-                    <param id="0" name="Object">UnderwaterTilemap</param>
+                    <param id="0" name="Object">Tilemap</param>
                 </condition>
             </conditions>
             <actions />
@@ -340,10 +340,10 @@
                 <event-block any="1" sid="845358044398093">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="392239294321199" type="LightningBullet">
-                            <param id="0" name="Object">UnderwaterTilemap</param>
+                            <param id="0" name="Object">Tilemap</param>
                         </condition>
                         <condition id="0" name="On collision with another object" sid="555974137048897" type="LightningBullet">
-                            <param id="0" name="Object">UnderwaterJumpThroughTilemap</param>
+                            <param id="0" name="Object">JumpThroughTilemap</param>
                         </condition>
                     </conditions>
                     <actions>
