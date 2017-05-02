@@ -65,10 +65,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="718930416716137">
+        <event-block any="1" sid="718930416716137">
             <conditions>
                 <condition id="2" name="Key is down" sid="112801897814225" type="Keyboard">
                     <param id="0" name="Key">83 (S)</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="842974011783016" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
                 </condition>
             </conditions>
             <actions>
