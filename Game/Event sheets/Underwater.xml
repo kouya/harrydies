@@ -106,6 +106,43 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="845366614454985">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="781672621770756" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="X co-ordinate">480</param>
+                </condition>
+                <condition id="-1" name="Compare X" sid="124168254477699" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="X co-ordinate">544</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="920766342968672" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">896</param>
+                </condition>
+                <condition id="-2" name="Compare Y" sid="599494562219436" type="PlayerBox">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">1760</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="890199064008158" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">544</param>
+                </action>
+                <action id="-9" name="Set value" sid="386802234824206" type="System">
+                    <param id="0" name="Variable">PlayerSpawnY</param>
+                    <param id="1" name="Value">2240</param>
+                </action>
+                <action id="-15" name="Set visible" sid="582146714932191" type="CheckpointText4">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-10" name="Set value" sid="291823519930136" type="UnderwaterBoss">
+                    <param id="0" name="Instance variable">isAngry</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Player Death</comment>
         <event-block any="1" sid="542775821165829">
             <conditions>
@@ -423,5 +460,114 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="949007687081068" title="Boss">
+            <sub-events>
+                <event-block sid="167954471134634">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="303685552230979" type="UnderwaterBoss">
+                            <param id="0" name="Instance variable">isAngry</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="477427355123377" type="UnderwaterBoss">
+                            <param id="0" name="Instance variable">isReallyAngry</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="964499587732336">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="933941797428649" type="System">
+                                    <param id="0" name="Interval (seconds)">random(2)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="760814228161733" type="UnderwaterBoss">
+                                    <param id="0" name="Object">SpikeBullet</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="193432696133679">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="319991018979264" type="UnderwaterBoss">
+                            <param id="0" name="Instance variable">isReallyAngry</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="440319526979112">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="484439267174790" type="System">
+                                    <param id="0" name="Interval (seconds)">random(1)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Spawn another object" sid="582839624800003" type="UnderwaterBoss">
+                                    <param id="0" name="Object">SpikeBullet</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="807523860757981">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="514884874158837" type="SpikeBullet" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="416298134836886" type="SpikeBullet">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="109716360292161">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="215308190161949" type="SpikeBullet">
+                            <param id="0" name="Object">Tilemap</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="233151374796190" type="SpikeBullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="671338942198822">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="899537174569748" type="SpikeBullet">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="918992881154563" type="SpikeBullet" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="307551342738325">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="348187515046799" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="591651578984697" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

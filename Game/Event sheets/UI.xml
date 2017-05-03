@@ -40,6 +40,10 @@
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="216710013768857" type="CheckpointText4">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="166981465584971">
