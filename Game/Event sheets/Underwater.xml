@@ -146,17 +146,20 @@
         <comment>Player Death</comment>
         <event-block any="1" sid="542775821165829">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="234475562179927" type="Player">
+                <condition id="0" name="On collision with another object" sid="234475562179927" type="PlayerBox">
                     <param id="0" name="Object">EnemyElectricFish</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="927708848564700" type="Player">
+                <condition id="0" name="On collision with another object" sid="927708848564700" type="PlayerBox">
                     <param id="0" name="Object">EnemyElectricFish2</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="938216110543011" type="Player">
+                <condition id="0" name="On collision with another object" sid="938216110543011" type="PlayerBox">
                     <param id="0" name="Object">EnemyUnsuspiciousFish</param>
                 </condition>
-                <condition id="0" name="On collision with another object" sid="291333847164861" type="Player">
+                <condition id="0" name="On collision with another object" sid="291333847164861" type="PlayerBox">
                     <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="456135564640718" type="PlayerBox">
+                    <param id="0" name="Object">UnderwaterBoss</param>
                 </condition>
             </conditions>
             <actions />
@@ -182,7 +185,7 @@
             <sub-events>
                 <event-block any="1" sid="508220395412190">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="879736753950214" type="Player">
+                        <condition id="0" name="On collision with another object" sid="879736753950214" type="PlayerBox">
                             <param id="0" name="Object">EnemyBlockerfish</param>
                         </condition>
                     </conditions>
@@ -233,61 +236,61 @@
                         </event-block>
                     </sub-events>
                 </event-block>
-            </sub-events>
-        </event-group>
-        <event-block any="1" sid="363118261514287">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="287423508190434" type="Player">
-                    <param id="0" name="Object">EnemyBlockerfish2</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="536069568179214">
+                <event-block any="1" sid="363118261514287">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="549571137736324" type="System">
-                            <param id="0" name="Variable">BlockBreakers</param>
-                            <param id="1" name="Comparison">4</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="0" name="On collision with another object" sid="287423508190434" type="PlayerBox">
+                            <param id="0" name="Object">EnemyBlockerfish2</param>
                         </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="489215539949800" type="EnemyBlockerfish2" />
-                        <action id="-11" name="Subtract from" sid="729473063358170" type="System">
-                            <param id="0" name="Variable">BlockBreakers</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="458170724069331" type="System">
-                            <param id="0" name="Variable">Score</param>
-                            <param id="1" name="Value">10</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="191354386474288">
-                    <conditions>
-                        <condition id="-22" name="Else" sid="132357569097232" type="System" />
                     </conditions>
                     <actions />
                     <sub-events>
-                        <event-block sid="201864500322443">
+                        <event-block sid="536069568179214">
                             <conditions>
-                                <condition id="-14" name="Compare variable" sid="712184622187933" type="System">
-                                    <param id="0" name="Variable">CheatMode</param>
-                                    <param id="1" name="Comparison">0</param>
+                                <condition id="-14" name="Compare variable" sid="549571137736324" type="System">
+                                    <param id="0" name="Variable">BlockBreakers</param>
+                                    <param id="1" name="Comparison">4</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="155689818459866" type="Function">
-                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
-                                    <param id="1" name="Parameter {n}"></param>
+                                <action id="-9" name="Destroy" sid="489215539949800" type="EnemyBlockerfish2" />
+                                <action id="-11" name="Subtract from" sid="729473063358170" type="System">
+                                    <param id="0" name="Variable">BlockBreakers</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="458170724069331" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">10</param>
                                 </action>
                             </actions>
+                        </event-block>
+                        <event-block sid="191354386474288">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="132357569097232" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="201864500322443">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="712184622187933" type="System">
+                                            <param id="0" name="Variable">CheatMode</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Call function" sid="155689818459866" type="Function">
+                                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                            <param id="1" name="Parameter {n}"></param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
-        </event-block>
+        </event-group>
         <event-block sid="628999521956229">
             <conditions>
                 <condition id="-7" name="Compare instance variable" sid="175069133609718" type="EnemyUnsuspiciousFish">
@@ -423,7 +426,7 @@
                 <event-block sid="592221132071356">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="856215323819988" type="LightningBullet">
-                            <param id="0" name="Object">Player</param>
+                            <param id="0" name="Object">PlayerBox</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -543,7 +546,7 @@
                 <event-block sid="671338942198822">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="899537174569748" type="SpikeBullet">
-                            <param id="0" name="Object">Player</param>
+                            <param id="0" name="Object">PlayerBox</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -563,6 +566,73 @@
                                     <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
                                     <param id="1" name="Parameter {n}"></param>
                                 </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="632401632197498">
+                    <conditions>
+                        <condition id="0" name="On function" sid="954068572922857" type="Function">
+                            <param id="0" name="Name">&quot;BossSwitchActivated&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="146108602749393">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="747253943460405" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="794618901280430" type="UnderwaterBoss">
+                                    <param id="0" name="Width">384</param>
+                                    <param id="1" name="Height">384</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="984893329271535">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="198284602832492" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="655721208777644" type="UnderwaterBoss">
+                                    <param id="0" name="Instance variable">isReallyAngry</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="770817879549629">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="597268317650338" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-7" name="Set size" sid="900357021008926" type="UnderwaterBoss">
+                                    <param id="0" name="Width">512</param>
+                                    <param id="1" name="Height">512</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="611330046011022">
+                            <conditions>
+                                <condition id="1" name="Compare parameter" sid="185338484772408" type="Function">
+                                    <param id="0" name="Index">0</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="216704412400214" type="UnderwaterBoss" />
                             </actions>
                         </event-block>
                     </sub-events>

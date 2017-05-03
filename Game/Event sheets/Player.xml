@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
+        <variable constant="0" name="ScoreMultiplier" sid="996606841063796" static="0" type="number">1</variable>
         <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
         <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
@@ -199,7 +200,7 @@
         </event-block>
         <event-block sid="263070839555152">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="579425074339309" type="Player">
+                <condition id="0" name="On collision with another object" sid="579425074339309" type="PlayerBox">
                     <param id="0" name="Object">Diamond</param>
                 </condition>
             </conditions>
@@ -209,11 +210,19 @@
                     <param id="0" name="Variable">Diamonds</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-10" name="Add to" sid="527800525161477" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">1 * ScoreMultiplier</param>
+                </action>
+                <action id="-9" name="Set value" sid="714966390014074" type="System">
+                    <param id="0" name="Variable">ScoreMultiplier</param>
+                    <param id="1" name="Value">ScoreMultiplier + 1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="164781968107002">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="391146675674088" type="Player">
+                <condition id="0" name="On collision with another object" sid="391146675674088" type="PlayerBox">
                     <param id="0" name="Object">Dynamite</param>
                 </condition>
             </conditions>
@@ -290,6 +299,10 @@
                 </action>
                 <action id="-15" name="Set visible" sid="331885289226772" type="PlayerDeathBackdrop">
                     <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="335472577461874" type="System">
+                    <param id="0" name="Variable">ScoreMultiplier</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>

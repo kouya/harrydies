@@ -52,7 +52,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Set text" sid="477970088744409" type="Score">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score</param>
+                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score &amp; &quot; (x&quot; &amp; ScoreMultiplier &amp; &quot;)&quot;</param>
                 </action>
                 <action id="0" name="Set text" sid="591607919286224" type="Diamonds">
                     <param id="0" name="Text">ZeroPad(Diamonds, 2)</param>
