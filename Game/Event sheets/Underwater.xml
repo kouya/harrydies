@@ -3,146 +3,229 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
+        <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">0</variable>
         <include>Player</include>
         <include>UI</include>
         <include>Contraptions</include>
         <comment>Checkpoints</comment>
-        <event-block sid="294363940862730">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="851221663992634" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">1632</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="349252583122793" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">1888</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="426609919100618" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">6272</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="385235938660079" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">6144</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="887632222097489" type="System">
-                    <param id="0" name="Variable">PlayerSpawnX</param>
-                    <param id="1" name="Value">1440</param>
-                </action>
-                <action id="-9" name="Set value" sid="509094351781198" type="System">
-                    <param id="0" name="Variable">PlayerSpawnY</param>
-                    <param id="1" name="Value">6208</param>
-                </action>
-                <action id="-15" name="Set visible" sid="997769645434791" type="CheckpointText1">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="229547133958163">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="946355321426453" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">6150</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="926652503913698" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">6350</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="904745537960191" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">3500</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="814877540603191" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">3400</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="673238643287894" type="System">
-                    <param id="0" name="Variable">PlayerSpawnX</param>
-                    <param id="1" name="Value">5984</param>
-                </action>
-                <action id="-9" name="Set value" sid="660436606110015" type="System">
-                    <param id="0" name="Variable">PlayerSpawnY</param>
-                    <param id="1" name="Value">3520</param>
-                </action>
-                <action id="-15" name="Set visible" sid="335484826022111" type="CheckpointText2">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="307896051110864">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="233247174997570" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">3328</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="702480051894638" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">3520</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="863508865953254" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">2688</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="131353139245926" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">2848</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="181704068363643" type="System">
-                    <param id="0" name="Variable">PlayerSpawnX</param>
-                    <param id="1" name="Value">3488</param>
-                </action>
-                <action id="-9" name="Set value" sid="785963380190284" type="System">
-                    <param id="0" name="Variable">PlayerSpawnY</param>
-                    <param id="1" name="Value">2816</param>
-                </action>
-                <action id="-15" name="Set visible" sid="730430214379179" type="CheckpointText3">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="845366614454985">
-            <conditions>
-                <condition id="-1" name="Compare X" sid="781672621770756" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="X co-ordinate">480</param>
-                </condition>
-                <condition id="-1" name="Compare X" sid="124168254477699" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="X co-ordinate">544</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="920766342968672" type="PlayerBox">
-                    <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">896</param>
-                </condition>
-                <condition id="-2" name="Compare Y" sid="599494562219436" type="PlayerBox">
-                    <param id="0" name="Comparison">2</param>
-                    <param id="1" name="Y co-ordinate">1760</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="890199064008158" type="System">
-                    <param id="0" name="Variable">PlayerSpawnX</param>
-                    <param id="1" name="Value">480</param>
-                </action>
-                <action id="-9" name="Set value" sid="386802234824206" type="System">
-                    <param id="0" name="Variable">PlayerSpawnY</param>
-                    <param id="1" name="Value">1024</param>
-                </action>
-                <action id="-15" name="Set visible" sid="582146714932191" type="CheckpointText4">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-                <action id="-10" name="Set value" sid="291823519930136" type="UnderwaterBoss">
-                    <param id="0" name="Instance variable">isAngry</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="263508305050189" title="Checkpoints">
+            <sub-events>
+                <event-block sid="294363940862730">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="851221663992634" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">1632</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="349252583122793" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">1888</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="426609919100618" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">6272</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="385235938660079" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">6144</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="154139960518690" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="887632222097489" type="System">
+                            <param id="0" name="Variable">PlayerSpawnX</param>
+                            <param id="1" name="Value">1440</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="509094351781198" type="System">
+                            <param id="0" name="Variable">PlayerSpawnY</param>
+                            <param id="1" name="Value">6208</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="997769645434791" type="CheckpointText1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="962647476139263" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="229547133958163">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="946355321426453" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">6150</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="926652503913698" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">6350</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="904745537960191" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">3500</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="814877540603191" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">3400</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="303758039523166" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="673238643287894" type="System">
+                            <param id="0" name="Variable">PlayerSpawnX</param>
+                            <param id="1" name="Value">5984</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="660436606110015" type="System">
+                            <param id="0" name="Variable">PlayerSpawnY</param>
+                            <param id="1" name="Value">3520</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="335484826022111" type="CheckpointText2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="368010506706840" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="307896051110864">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="233247174997570" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">3328</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="702480051894638" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">3520</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="863508865953254" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">2688</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="131353139245926" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">2848</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="461070273237549" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="181704068363643" type="System">
+                            <param id="0" name="Variable">PlayerSpawnX</param>
+                            <param id="1" name="Value">3488</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="785963380190284" type="System">
+                            <param id="0" name="Variable">PlayerSpawnY</param>
+                            <param id="1" name="Value">2816</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="730430214379179" type="CheckpointText3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="469177372493504" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="845366614454985">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="781672621770756" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">480</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="124168254477699" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">544</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="920766342968672" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">896</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="599494562219436" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">1760</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="229846576137123" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="890199064008158" type="System">
+                            <param id="0" name="Variable">PlayerSpawnX</param>
+                            <param id="1" name="Value">480</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="386802234824206" type="System">
+                            <param id="0" name="Variable">PlayerSpawnY</param>
+                            <param id="1" name="Value">1024</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="582146714932191" type="CheckpointText4">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="291823519930136" type="UnderwaterBoss">
+                            <param id="0" name="Instance variable">isAngry</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="557746750290772" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="404222683287633">
+                    <conditions>
+                        <condition id="-1" name="Compare X" sid="312104044914788" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="X co-ordinate">4096</param>
+                        </condition>
+                        <condition id="-1" name="Compare X" sid="997166091062947" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="X co-ordinate">4160</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="632714795308505" type="PlayerBox">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Y co-ordinate">256</param>
+                        </condition>
+                        <condition id="-2" name="Compare Y" sid="666955331987899" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">640</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="285699495688311" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="258208139609359" type="System">
+                            <param id="0" name="Variable">PlayerSpawnX</param>
+                            <param id="1" name="Value">4224</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="572622173795295" type="System">
+                            <param id="0" name="Variable">PlayerSpawnY</param>
+                            <param id="1" name="Value">576</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="820834241112813" type="CheckpointText5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="867209244289690" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
         <comment>Player Death</comment>
         <event-block any="1" sid="542775821165829">
             <conditions>

@@ -833,11 +833,6 @@
         </object-type>
         <object-type name="EnemyBlockerfish" sid="627646412083471">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="271327854940321">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376611415341975" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -893,11 +888,6 @@
         </object-type>
         <object-type name="EnemyElectricFish" sid="638557411434294">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="434324385784825">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959914299771396" speed="1">
                     <frame duration="1" hotspotX="0.923077" hotspotY="0.166667">
@@ -1190,11 +1180,6 @@
         </object-type>
         <object-type name="EnemyElectricFish2" sid="641822319753871">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="572347890451503">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306735163057568" speed="1">
                     <frame duration="1" hotspotX="0.0769231" hotspotY="0.166667">
@@ -1262,11 +1247,6 @@
         </object-type>
         <object-type name="EnemyBlockerfish2" sid="213572059679258">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="874290927605850">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743804574413153" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -1611,6 +1591,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="CheckpointText5" sid="388725435607636">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
