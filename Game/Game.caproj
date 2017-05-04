@@ -1595,6 +1595,9 @@
         <object-type name="CheckpointText5" sid="388725435607636">
             <plugin id="Text" />
         </object-type>
+        <object-type name="StoryFinalTriggered" sid="712379961692939">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

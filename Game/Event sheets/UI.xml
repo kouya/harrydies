@@ -48,6 +48,10 @@
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="729414243536072" type="StoryFinalTriggered">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="166981465584971">
