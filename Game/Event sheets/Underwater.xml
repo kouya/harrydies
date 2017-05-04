@@ -128,11 +128,11 @@
             <actions>
                 <action id="-9" name="Set value" sid="890199064008158" type="System">
                     <param id="0" name="Variable">PlayerSpawnX</param>
-                    <param id="1" name="Value">544</param>
+                    <param id="1" name="Value">480</param>
                 </action>
                 <action id="-9" name="Set value" sid="386802234824206" type="System">
                     <param id="0" name="Variable">PlayerSpawnY</param>
-                    <param id="1" name="Value">2240</param>
+                    <param id="1" name="Value">1024</param>
                 </action>
                 <action id="-15" name="Set visible" sid="582146714932191" type="CheckpointText4">
                     <param id="0" name="Visibility">1</param>
