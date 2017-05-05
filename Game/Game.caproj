@@ -1540,7 +1540,7 @@
         <object-type name="CheckpointText4" sid="676206874651128">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Switch1" sid="118285898286594">
+        <object-type name="BossSwitch" sid="118285898286594">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="state" sid="477010781349232" type="number" />
@@ -1710,6 +1710,11 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="NonSolidTilemap" sid="333542278366568">
+            <plugin id="Tilemap" />
+            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <tiles />
         </object-type>
     </object-folder>
     <families />
