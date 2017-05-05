@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
-        <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">3</variable>
+        <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">0</variable>
         <include>Player</include>
         <include>UI</include>
         <include>Contraptions</include>
