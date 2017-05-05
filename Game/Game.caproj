@@ -88,7 +88,9 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249058291435172" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="X:\Documents\Super_Torture_Box\Artwork\Player\player_box.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="X:\Documents\Super_Torture_Box\Artwork\Player\player_box.png">
+                        <image-point name="Target" x="0.5" y="0.5" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -1462,8 +1464,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="8" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="465459724192999" speed="15">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.332758" y="0.0596711" />
                             <point x="0.55003" y="0.587602" />
@@ -1472,7 +1474,7 @@
                             <point x="0.319035" y="0.66847" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.0125582" y="0.02" />
                             <point x="0.415473" y="0.02" />
@@ -1482,7 +1484,7 @@
                             <point x="0.169638" y="0.16174" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204">
                         <collision-poly>
                             <point x="0.0892842" y="0" />
                             <point x="0.578218" y="0.216191" />
@@ -1492,7 +1494,7 @@
                             <point x="0.382644" y="0.457826" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.0674571" y="0" />
                             <point x="0.522585" y="0" />
@@ -1502,7 +1504,7 @@
                             <point x="0.389935" y="0.160874" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204">
                         <collision-poly>
                             <point x="0.0766054" y="0.0626023" />
                             <point x="0.537451" y="0.0501468" />
@@ -1512,7 +1514,7 @@
                             <point x="0.466552" y="0.364651" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.721363" y="0.351478" />
                             <point x="1" y="0.02" />
@@ -1522,7 +1524,7 @@
                             <point x="0.039483" y="0.494288" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.510204">
                         <collision-poly>
                             <point x="0.490566" y="0.57119" />
                             <point x="0.723848" y="0.0130558" />
@@ -1597,6 +1599,117 @@
         </object-type>
         <object-type name="StoryFinalTriggered" sid="712379961692939">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="BossFragment1" sid="729278282617071">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="985687611526311">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="292129225032078" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossFragment2" sid="952497610261197">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="197430884198407">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647577449682340" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BossFragment3" sid="362066914224741">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="851862945700483">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="880554783557653" speed="5">
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501393">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00387597" y="1" />
+                            <point x="0.00387597" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501393" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.00387597" />
+                            <point x="1" y="0.00387597" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501393">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0.996124" y="0" />
+                            <point x="0.996124" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

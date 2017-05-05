@@ -3,7 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
-        <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">0</variable>
+        <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">3</variable>
         <include>Player</include>
         <include>UI</include>
         <include>Contraptions</include>
@@ -541,8 +541,8 @@
             </conditions>
             <actions>
                 <action id="-22" name="Set angle toward position" sid="732586180373709" type="LightningBullet">
-                    <param id="0" name="X">Player.X</param>
-                    <param id="1" name="Y">Player.Y</param>
+                    <param id="0" name="X">PlayerBox.ImagePointX(1)</param>
+                    <param id="1" name="Y">PlayerBox.ImagePointY(1)</param>
                 </action>
             </actions>
         </event-block>
@@ -611,8 +611,8 @@
                     </conditions>
                     <actions>
                         <action id="-22" name="Set angle toward position" sid="416298134836886" type="SpikeBullet">
-                            <param id="0" name="X">Player.X</param>
-                            <param id="1" name="Y">Player.Y</param>
+                            <param id="0" name="X">PlayerBox.ImagePointX(1)</param>
+                            <param id="1" name="Y">PlayerBox.ImagePointY(1)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -715,10 +715,124 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Spawn another object" sid="353660613504751" type="UnderwaterBoss">
+                                    <param id="0" name="Object">BossFragment1</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="868964524131325" type="UnderwaterBoss">
+                                    <param id="0" name="Object">BossFragment2</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Spawn another object" sid="616878786322503" type="UnderwaterBoss">
+                                    <param id="0" name="Object">BossFragment3</param>
+                                    <param id="1" name="Layer">3</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="216704412400214" type="UnderwaterBoss" />
                             </actions>
                         </event-block>
                     </sub-events>
+                </event-block>
+                <event-block sid="485361257714347">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="392015741179130" type="BossFragment1" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="130875021252528" type="BossFragment1">
+                            <param id="0" name="X">PlayerBox.X</param>
+                            <param id="1" name="Y">PlayerBox.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="465751504788632">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="177473819767384" type="BossFragment2" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="373023621732753" type="BossFragment2">
+                            <param id="0" name="X">PlayerBox.X</param>
+                            <param id="1" name="Y">PlayerBox.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="848524049252087">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="295448273874531" type="BossFragment3" />
+                    </conditions>
+                    <actions>
+                        <action id="-22" name="Set angle toward position" sid="359562392833822" type="BossFragment3">
+                            <param id="0" name="X">PlayerBox.X</param>
+                            <param id="1" name="Y">PlayerBox.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="811960897584702">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="124738752683779" type="BossFragment1" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="459415541588382" type="BossFragment1" />
+                    </actions>
+                </event-block>
+                <event-block sid="247457521629233">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="819653865764701" type="BossFragment2" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="762805388127456" type="BossFragment2" />
+                    </actions>
+                </event-block>
+                <event-block sid="706130521016301">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="251894462543570" type="BossFragment3" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="980791090072032" type="BossFragment3" />
+                    </actions>
+                </event-block>
+                <event-block sid="199537695091660">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="305741153993322" type="BossFragment1">
+                            <param id="0" name="Object">PlayerBox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="607986768120906" type="BossFragment1" />
+                        <action id="0" name="Call function" sid="926691267140920" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="152922914820634">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="254480020674790" type="BossFragment2">
+                            <param id="0" name="Object">PlayerBox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="830228218489291" type="BossFragment2" />
+                        <action id="0" name="Call function" sid="250582238430265" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="604676559222781">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="574985770901396" type="BossFragment3">
+                            <param id="0" name="Object">PlayerBox</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="482160831060510" type="BossFragment3" />
+                        <action id="0" name="Call function" sid="684834892352779" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-group>

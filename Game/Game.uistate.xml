@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Underwater</layout>
-        <event-sheet active="1" order="1">Player</event-sheet>
-        <event-sheet order="2">Underwater</event-sheet>
+        <event-sheet order="1">Player</event-sheet>
+        <event-sheet active="1" order="2">Underwater</event-sheet>
         <event-sheet order="3">Contraptions</event-sheet>
         <event-sheet order="4">UI</event-sheet>
     </open-tabs>
@@ -54,5 +54,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SpikeBullet/" />
         <folder expanded="1" path="animation-folder/Switch1/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/BossFragment1/" />
+        <folder expanded="1" path="animation-folder/BossFragment2/" />
+        <folder expanded="1" path="animation-folder/BossFragment3/" />
     </folders-expanded>
 </c2uistate>
