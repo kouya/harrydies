@@ -1322,7 +1322,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="DebugFPS" sid="222184137183587">
+        <object-type name="DebugText" sid="222184137183587">
             <plugin id="Text" />
         </object-type>
         <object-type name="PlayerDead" sid="760545039491811">

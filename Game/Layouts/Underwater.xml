@@ -12013,7 +12013,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="DebugFPS" uid="221">
+                <instance type="DebugText" uid="221">
                     <properties>
                         <text>Text</text>
                         <initial-visibility>Visible</initial-visibility>
