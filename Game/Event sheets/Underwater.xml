@@ -469,6 +469,12 @@
                                     <param id="1" name="Layer">3</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
+                                <action id="0" name="Play" sid="991584597306884" type="Audio">
+                                    <param id="0" name="Audio file">electric_fish_shot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -490,6 +496,12 @@
                                     <param id="0" name="Object">LightningBullet</param>
                                     <param id="1" name="Layer">3</param>
                                     <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="961562484822953" type="Audio">
+                                    <param id="0" name="Audio file">electric_fish_shot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

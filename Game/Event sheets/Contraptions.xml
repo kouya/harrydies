@@ -55,7 +55,14 @@
                             <param id="0" name="Object">JumpPad</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="724215554687881" type="Audio">
+                            <param id="0" name="Audio file">jump_pad</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                     <sub-events>
                         <event-block sid="899328407448602">
                             <conditions>
