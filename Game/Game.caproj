@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="warp">Warp</effect>
         <effect author="Scirra" id="warpripple">Warp Ripple</effect>
         <effect author="Viktor Korsun" id="waterbg">Water background</effect>
     </used-effects>
@@ -1447,14 +1448,6 @@
         <object-type name="CheckpointText3" sid="384650143034043">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite" sid="667157230769739">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864849592903542" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="SpikeBullet" sid="995359557684838">
             <plugin id="Sprite" />
             <behaviors>
@@ -1586,14 +1579,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="850210427126691">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="746709410579659" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="CheckpointText5" sid="388725435607636">
             <plugin id="Text" />
         </object-type>
@@ -1715,6 +1700,38 @@
             <plugin id="Tilemap" />
             <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
             <tiles />
+        </object-type>
+        <object-type name="Portal" sid="843245382779037">
+            <plugin id="Sprite" />
+            <effects>
+                <effect-type name="Warp">
+                    <effect id="warp" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781774975398533" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="X:\Projects\Super_Torture_Box\Artwork\Common\portal.png">
+                        <collision-poly>
+                            <point x="0.121094" y="0.224609" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.832031" y="0.222656" />
+                            <point x="1" y="0.5" />
+                            <point x="0.894531" y="0.853516" />
+                            <point x="0.556641" y="1" />
+                            <point x="0.191406" y="0.832031" />
+                            <point x="0" y="0.5625" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mermaid" sid="423663575650362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="901711590494900" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
