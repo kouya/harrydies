@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
+        <variable constant="0" name="diamondMineObjects" sid="875686515246053" static="0" type="number">17</variable>
+        <variable constant="0" name="diamondMineStartTime" sid="994165715517954" static="0" type="number">0</variable>
+        <variable constant="0" name="diamondMineisStarted" sid="134903026034856" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
         <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
         <variable constant="0" name="LastCheckpoint" sid="275637408694974" static="0" type="number">0</variable>
@@ -949,6 +952,131 @@
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="107708618629863" title="Diamond Mine Minigame">
+            <sub-events>
+                <event-block sid="357767274980887">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="797924710767567" type="PlayerBox">
+                            <param id="0" name="Object">MinigameTriggerStart</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="828872448170631" type="System">
+                            <param id="0" name="Variable">diamondMineisStarted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="792302792101926" type="MinigameTriggerStart" />
+                        <action id="-15" name="Set visible" sid="139903708158129" type="MinigameBlocker">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="523457037422145" type="OverdisplayBackdrop">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="566162228307734" type="OverlayText">
+                            <param id="0" name="Text">&quot;Diamond Madness! Ready...&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="822496800339557" type="OverlayText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="816890503088869" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="1" name="Append text" sid="727722993123172" type="OverlayText">
+                            <param id="0" name="Text">&quot; Set...&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="277094710563125" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="1" name="Append text" sid="799536643512832" type="OverlayText">
+                            <param id="0" name="Text">&quot; GO!&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="798580387625032" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="171138478875610" type="OverlayText">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="755515962912352" type="OverdisplayBackdrop">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="558938920767851" type="System">
+                            <param id="0" name="Variable">diamondMineisStarted</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="156129162597153" type="MinigameBlocker" />
+                        <action id="-9" name="Set value" sid="167985376949959" type="System">
+                            <param id="0" name="Variable">diamondMineStartTime</param>
+                            <param id="1" name="Value">wallclocktime</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="730700021378916">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="292455200881158" type="System">
+                            <param id="0" name="Interval (seconds)">0.1</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="303626078394157" type="System">
+                            <param id="0" name="Variable">diamondMineisStarted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="925232067425041" type="MinigameScore">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="583084270947564" type="MinigameScore">
+                            <param id="0" name="Text">&quot;Diamond Mine: &quot; &amp; round((wallclocktime - diamondMineStartTime) * 100) / 100 &amp; &quot; -&gt; &quot; &amp; diamondMineObjects</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="283806972235779">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="952424736413952" type="System" />
+                        <condition id="-14" name="Compare variable" sid="563569947965393" type="System">
+                            <param id="0" name="Variable">diamondMineObjects</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="105848039984713" type="System">
+                            <param id="0" name="Variable">diamondMineisStarted</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="957210945442318" type="OverdisplayBackdrop">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="194024557956919">
+                    <conditions>
+                        <condition id="0" name="On function" sid="998179548721080" type="Function">
+                            <param id="0" name="Name">&quot;UnderwaterDiamondCollected&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="511087050592054">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="946743629622098" type="System">
+                                    <param id="0" name="Variable">diamondMineisStarted</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="120494223884332" type="System">
+                                    <param id="0" name="Variable">diamondMineObjects</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>

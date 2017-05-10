@@ -4,7 +4,7 @@
     <name>Player</name>
     <events>
         <variable constant="0" name="ScoreMultiplier" sid="996606841063796" static="0" type="number">1</variable>
-        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">0</variable>
+        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">1</variable>
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
@@ -216,6 +216,10 @@
                     <param id="0" name="Variable">ScoreMultiplier</param>
                     <param id="1" name="Value">ScoreMultiplier + 1</param>
                 </action>
+                <action id="0" name="Call function" sid="495673599835087" type="Function">
+                    <param id="0" name="Name">&quot;UnderwaterDiamondCollected&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="164781968107002">
@@ -268,7 +272,7 @@
                 <action id="-2" name="Set Y" sid="838645424822624" type="PlayerBox">
                     <param id="0" name="Y">PlayerSpawnY</param>
                 </action>
-                <action id="-15" name="Set visible" sid="560572227128529" type="PlayerDeathBackdrop">
+                <action id="-15" name="Set visible" sid="560572227128529" type="OverdisplayBackdrop">
                     <param id="0" name="Visibility">1</param>
                 </action>
                 <action id="-15" name="Set visible" sid="353823533917665" type="PlayerDead">
@@ -301,7 +305,7 @@
                 <action id="-15" name="Set visible" sid="176103954534694" type="PlayerDeathsText">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="-15" name="Set visible" sid="331885289226772" type="PlayerDeathBackdrop">
+                <action id="-15" name="Set visible" sid="331885289226772" type="OverdisplayBackdrop">
                     <param id="0" name="Visibility">0</param>
                 </action>
                 <action id="-9" name="Set value" sid="335472577461874" type="System">
@@ -329,11 +333,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="929020479476354" type="System">
                                     <param id="0" name="Variable">PlayerSpawnX</param>
-                                    <param id="1" name="Value">5772</param>
+                                    <param id="1" name="Value">6688</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="318931340729344" type="System">
                                     <param id="0" name="Variable">PlayerSpawnY</param>
-                                    <param id="1" name="Value">732</param>
+                                    <param id="1" name="Value">4768</param>
                                 </action>
                                 <action id="-1" name="Set X" sid="562005502555855" type="PlayerBox">
                                     <param id="0" name="X">PlayerSpawnX</param>
