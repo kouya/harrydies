@@ -2,7 +2,7 @@
 <c2project>
     <name>Game</name>
     <description></description>
-    <version>0.9.1</version>
+    <version>0.9.2</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -1812,6 +1812,20 @@
         <file name="jump_pad.ogg" />
         <file name="electric_fish_shot.m4a" />
         <file name="electric_fish_shot.ogg" />
+        <file name="death_spikes.m4a" />
+        <file name="death_spikes.ogg" />
+        <file name="death_underwater.m4a" />
+        <file name="death_underwater.ogg" />
+        <file name="death_zap.m4a" />
+        <file name="death_zap.ogg" />
+        <file name="diamond_collect.m4a" />
+        <file name="diamond_collect.ogg" />
+        <file name="blocker_destroyed.m4a" />
+        <file name="blocker_destroyed.ogg" />
+        <file name="death_bite.m4a" />
+        <file name="death_bite.ogg" />
+        <file name="dymamite_collect.m4a" />
+        <file name="dymamite_collect.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Mega Hyper Ultrastorm.m4a" />

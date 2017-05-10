@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
+        <variable constant="0" name="ActiveLevel" sid="510097885831940" static="0" type="text">Underwater</variable>
         <variable constant="0" name="diamondMineObjects" sid="875686515246053" static="0" type="number">17</variable>
         <variable constant="0" name="diamondMineStartTime" sid="994165715517954" static="0" type="number">0</variable>
         <variable constant="0" name="diamondMineisStarted" sid="134903026034856" static="0" type="number">0</variable>
@@ -23,8 +24,14 @@
                         <action id="4" name="Preload" sid="681198808988996" type="Audio">
                             <param id="0" name="Audio file">electric_fish_shot</param>
                         </action>
-                        <action id="4" name="Preload" sid="421597235925421" type="Audio">
-                            <param id="0" name="Audio file">jump_pad</param>
+                        <action id="4" name="Preload" sid="603102837302207" type="Audio">
+                            <param id="0" name="Audio file">death_underwater</param>
+                        </action>
+                        <action id="4" name="Preload" sid="518833055273315" type="Audio">
+                            <param id="0" name="Audio file">blocker_destroyed</param>
+                        </action>
+                        <action id="4" name="Preload" sid="214596260754624" type="Audio">
+                            <param id="0" name="Audio file">death_zap</param>
                         </action>
                         <action id="0" name="Play" sid="221414060440358" type="Audio">
                             <param id="0" name="Audio file">Bassa Island Game Loop</param>
@@ -256,20 +263,107 @@
         </event-group>
         <event-group description="" sid="844102716783128" title="Player Death">
             <sub-events>
-                <event-block any="1" sid="542775821165829">
+                <event-block any="1" sid="562377201935984">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="234475562179927" type="PlayerBox">
+                        <condition id="0" name="On collision with another object" sid="393160565866812" type="PlayerBox">
                             <param id="0" name="Object">EnemyElectricFish</param>
                         </condition>
-                        <condition id="0" name="On collision with another object" sid="927708848564700" type="PlayerBox">
+                        <condition id="0" name="On collision with another object" sid="873240469845995" type="PlayerBox">
                             <param id="0" name="Object">EnemyElectricFish2</param>
                         </condition>
-                        <condition id="0" name="On collision with another object" sid="938216110543011" type="PlayerBox">
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="323487656316966" type="Audio">
+                            <param id="0" name="Audio file">death_zap</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="556705925761987">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="759831359284349" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="720068089619992" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="673682262635474">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="482282416094310" type="PlayerBox">
                             <param id="0" name="Object">EnemyUnsuspiciousFish</param>
                         </condition>
-                        <condition id="0" name="On collision with another object" sid="291333847164861" type="PlayerBox">
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="762556966857696" type="Audio">
+                            <param id="0" name="Audio file">death_bite</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="290638976403747">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="837176419659555" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="503315672966158" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="105954648545432">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="631832336971640" type="PlayerBox">
                             <param id="0" name="Object">UnderwaterDeadlyDecoration</param>
                         </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="195108779283517" type="Audio">
+                            <param id="0" name="Audio file">death_spikes</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="126125207925523">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="158057426174270" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="461743962863841" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="542775821165829">
+                    <conditions>
                         <condition id="0" name="On collision with another object" sid="456135564640718" type="PlayerBox">
                             <param id="0" name="Object">UnderwaterBoss</param>
                         </condition>
@@ -315,6 +409,12 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="440017622305403" type="EnemyBlockerfish" />
+                                <action id="0" name="Play" sid="428758939288618" type="Audio">
+                                    <param id="0" name="Audio file">blocker_destroyed</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-11" name="Subtract from" sid="744170308648217" type="System">
                                     <param id="0" name="Variable">BlockBreakers</param>
                                     <param id="1" name="Value">1</param>
@@ -368,6 +468,12 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="489215539949800" type="EnemyBlockerfish2" />
+                                <action id="0" name="Play" sid="914427598334806" type="Audio">
+                                    <param id="0" name="Audio file">blocker_destroyed</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-11" name="Subtract from" sid="729473063358170" type="System">
                                     <param id="0" name="Variable">BlockBreakers</param>
                                     <param id="1" name="Value">1</param>
@@ -557,6 +663,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="214560284520049" type="LightningBullet" />
+                        <action id="0" name="Play" sid="909668742439932" type="Audio">
+                            <param id="0" name="Audio file">death_zap</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="363407075558370">

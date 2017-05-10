@@ -4,11 +4,25 @@
     <name>Player</name>
     <events>
         <variable constant="0" name="ScoreMultiplier" sid="996606841063796" static="0" type="number">1</variable>
-        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">1</variable>
+        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">0</variable>
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
         <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
+        <comment>Preload common sounds</comment>
+        <event-block sid="733507130191429">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="979678329057994" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="506838337339848" type="Audio">
+                    <param id="0" name="Audio file">dymamite_collect</param>
+                </action>
+                <action id="4" name="Preload" sid="602767239187387" type="Audio">
+                    <param id="0" name="Audio file">diamond_collect</param>
+                </action>
+            </actions>
+        </event-block>
         <comment>Update player sprite</comment>
         <event-block sid="335561993586300">
             <conditions>
@@ -195,6 +209,25 @@
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="355626006520698">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="991071183768683" type="System">
+                            <param id="0" name="Variable">ActiveLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Underwater&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="309249705402848" type="Audio">
+                            <param id="0" name="Audio file">death_underwater</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="263070839555152">
             <conditions>
@@ -216,6 +249,12 @@
                     <param id="0" name="Variable">ScoreMultiplier</param>
                     <param id="1" name="Value">ScoreMultiplier + 1</param>
                 </action>
+                <action id="0" name="Play" sid="299218627210965" type="Audio">
+                    <param id="0" name="Audio file">diamond_collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="0" name="Call function" sid="495673599835087" type="Function">
                     <param id="0" name="Name">&quot;UnderwaterDiamondCollected&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
@@ -230,6 +269,12 @@
             </conditions>
             <actions>
                 <action id="-9" name="Destroy" sid="159848915435720" type="Dynamite" />
+                <action id="0" name="Play" sid="315362686035589" type="Audio">
+                    <param id="0" name="Audio file">dymamite_collect</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
                 <action id="-10" name="Add to" sid="324136777910888" type="System">
                     <param id="0" name="Variable">BlockBreakers</param>
                     <param id="1" name="Value">1</param>
@@ -333,11 +378,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="929020479476354" type="System">
                                     <param id="0" name="Variable">PlayerSpawnX</param>
-                                    <param id="1" name="Value">6688</param>
+                                    <param id="1" name="Value">224</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="318931340729344" type="System">
                                     <param id="0" name="Variable">PlayerSpawnY</param>
-                                    <param id="1" name="Value">4768</param>
+                                    <param id="1" name="Value">7552</param>
                                 </action>
                                 <action id="-1" name="Set X" sid="562005502555855" type="PlayerBox">
                                     <param id="0" name="X">PlayerSpawnX</param>

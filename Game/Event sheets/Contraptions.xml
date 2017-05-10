@@ -5,50 +5,80 @@
     <events>
         <variable constant="0" name="SwitchesActivated" sid="543859649693013" static="0" type="number">0</variable>
         <variable constant="0" name="JumpPadsActive" sid="536643187242013" static="0" type="number">0</variable>
-        <event-block sid="346427754732632">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="536549261800356" type="PlayerBox">
-                    <param id="0" name="Object">Spikes</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-15" name="Set visible" sid="369092876099335" type="Spikes">
-                    <param id="0" name="Visibility">1</param>
-                </action>
-            </actions>
+        <event-group description="" sid="105053357530814" title="Spikes">
             <sub-events>
-                <event-block sid="123138868372607">
+                <event-block sid="561469533504201">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="570928540825060" type="System">
-                            <param id="0" name="Variable">CheatMode</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
+                        <condition id="-2" name="On start of layout" sid="559413406534617" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Preload" sid="178865579432958" type="Audio">
+                            <param id="0" name="Audio file">death_spikes</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="346427754732632">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="536549261800356" type="PlayerBox">
+                            <param id="0" name="Object">Spikes</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Call function" sid="863627116010159" type="Function">
-                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
-                            <param id="1" name="Parameter {n}"></param>
+                        <action id="-15" name="Set visible" sid="369092876099335" type="Spikes">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="233123629718995" type="Audio">
+                            <param id="0" name="Audio file">death_spikes</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="123138868372607">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="570928540825060" type="System">
+                                    <param id="0" name="Variable">CheatMode</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="863627116010159" type="Function">
+                                    <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="979680319212596">
+                    <conditions>
+                        <condition id="-9" name="Is visible" sid="777624375522605" type="Spikes" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="352647130745336" type="System">
+                            <param id="0" name="Seconds">3.14</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="443342493474866" type="Spikes">
+                            <param id="0" name="Visibility">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="979680319212596">
-            <conditions>
-                <condition id="-9" name="Is visible" sid="777624375522605" type="Spikes" />
-            </conditions>
-            <actions>
-                <action id="-16" name="Wait" sid="352647130745336" type="System">
-                    <param id="0" name="Seconds">3.14</param>
-                </action>
-                <action id="-15" name="Set visible" sid="443342493474866" type="Spikes">
-                    <param id="0" name="Visibility">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-group description="" sid="505310357692081" title="Jump Pads">
             <sub-events>
+                <event-block sid="940583000986450">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="803216016343336" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Preload" sid="932975358096454" type="Audio">
+                            <param id="0" name="Audio file">jump_pad</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="493608888862495">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="814896176049065" type="PlayerBox">
