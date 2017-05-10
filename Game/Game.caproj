@@ -1828,12 +1828,12 @@
         <file name="dymamite_collect.ogg" />
     </sounds-folder>
     <music-folder>
-        <file name="Mega Hyper Ultrastorm.m4a" />
-        <file name="Mega Hyper Ultrastorm.ogg" />
-        <file name="Silly Fun.m4a" />
-        <file name="Silly Fun.ogg" />
-        <file name="Bassa Island Game Loop.m4a" />
-        <file name="Bassa Island Game Loop.ogg" />
+        <file name="Mega_Hyper_Ultrastorm.m4a" />
+        <file name="Mega_Hyper_Ultrastorm.ogg" />
+        <file name="Silly_Fun.m4a" />
+        <file name="Silly_Fun.ogg" />
+        <file name="Bassa_Island_Game_Loop.m4a" />
+        <file name="Bassa_Island_Game_Loop.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

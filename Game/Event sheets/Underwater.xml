@@ -34,7 +34,7 @@
                             <param id="0" name="Audio file">death_zap</param>
                         </action>
                         <action id="0" name="Play" sid="221414060440358" type="Audio">
-                            <param id="0" name="Audio file">Bassa Island Game Loop</param>
+                            <param id="0" name="Audio file">Bassa_Island_Game_Loop</param>
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
