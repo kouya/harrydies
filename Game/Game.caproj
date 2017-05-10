@@ -1772,7 +1772,14 @@
         <file name="electric_fish_shot.m4a" />
         <file name="electric_fish_shot.ogg" />
     </sounds-folder>
-    <music-folder />
+    <music-folder>
+        <file name="Mega Hyper Ultrastorm.m4a" />
+        <file name="Mega Hyper Ultrastorm.ogg" />
+        <file name="Silly Fun.m4a" />
+        <file name="Silly Fun.ogg" />
+        <file name="Bassa Island Game Loop.m4a" />
+        <file name="Bassa Island Game Loop.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

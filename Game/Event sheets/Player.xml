@@ -247,6 +247,12 @@
                     <param id="0" name="Variable">Score</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action behavior="Platform" id="8" name="Set vector X" sid="240867410045184" type="PlayerBox">
+                    <param id="0" name="Vector X">0</param>
+                </action>
+                <action behavior="Platform" id="9" name="Set vector Y" sid="730294328935116" type="PlayerBox">
+                    <param id="0" name="Vector Y">0</param>
+                </action>
                 <action behavior="Platform" id="0" name="Set ignoring input" sid="453666420413491" type="PlayerBox">
                     <param id="0" name="Input">1</param>
                 </action>
