@@ -10,19 +10,6 @@
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
         <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
         <comment>Preload common sounds</comment>
-        <event-block sid="733507130191429">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="979678329057994" type="System" />
-            </conditions>
-            <actions>
-                <action id="4" name="Preload" sid="506838337339848" type="Audio">
-                    <param id="0" name="Audio file">dymamite_collect</param>
-                </action>
-                <action id="4" name="Preload" sid="602767239187387" type="Audio">
-                    <param id="0" name="Audio file">diamond_collect</param>
-                </action>
-            </actions>
-        </event-block>
         <comment>Update player sprite</comment>
         <event-block sid="335561993586300">
             <conditions>

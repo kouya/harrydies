@@ -13,6 +13,7 @@
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -40,6 +41,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>MainMenu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -1778,16 +1780,46 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="MenuNewGame" sid="807964332726335">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="134137742072008">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="MenuCredits" sid="594574003383366">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="MenuMainTitle" sid="356524036202610">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TilemapMainMenu" sid="832713183459100">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="519284936557422">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <tiles />
+        </object-type>
+        <object-type name="TiledBackground" sid="260252210794796">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
+        <layout>MainMenu.xml</layout>
         <layout>Underwater.xml</layout>
+        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Player.xml</event-sheet>
         <event-sheet>Underwater.xml</event-sheet>
         <event-sheet>UI.xml</event-sheet>
         <event-sheet>Contraptions.xml</event-sheet>
+        <event-sheet>MainMenu.xml</event-sheet>
+        <event-sheet>Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
@@ -1806,6 +1838,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="528" />
     </global-instances>
     <sounds-folder>
         <file name="jump_pad.m4a" />
@@ -1830,10 +1863,10 @@
     <music-folder>
         <file name="Mega_Hyper_Ultrastorm.m4a" />
         <file name="Mega_Hyper_Ultrastorm.ogg" />
-        <file name="Silly_Fun.m4a" />
-        <file name="Silly_Fun.ogg" />
         <file name="Bassa_Island_Game_Loop.m4a" />
         <file name="Bassa_Island_Game_Loop.ogg" />
+        <file name="Silly_Fun.m4a" />
+        <file name="Silly_Fun.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

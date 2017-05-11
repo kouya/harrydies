@@ -23,18 +23,6 @@
                         <condition id="-2" name="On start of layout" sid="498558485282739" type="System" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Preload" sid="681198808988996" type="Audio">
-                            <param id="0" name="Audio file">electric_fish_shot</param>
-                        </action>
-                        <action id="4" name="Preload" sid="603102837302207" type="Audio">
-                            <param id="0" name="Audio file">death_underwater</param>
-                        </action>
-                        <action id="4" name="Preload" sid="518833055273315" type="Audio">
-                            <param id="0" name="Audio file">blocker_destroyed</param>
-                        </action>
-                        <action id="4" name="Preload" sid="214596260754624" type="Audio">
-                            <param id="0" name="Audio file">death_zap</param>
-                        </action>
                         <action id="0" name="Play" sid="221414060440358" type="Audio">
                             <param id="0" name="Audio file">Bassa_Island_Game_Loop</param>
                             <param id="2" name="Loop">1</param>

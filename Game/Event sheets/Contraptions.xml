@@ -7,16 +7,6 @@
         <variable constant="0" name="JumpPadsActive" sid="536643187242013" static="0" type="number">0</variable>
         <event-group description="" sid="105053357530814" title="Spikes">
             <sub-events>
-                <event-block sid="561469533504201">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="559413406534617" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Preload" sid="178865579432958" type="Audio">
-                            <param id="0" name="Audio file">death_spikes</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="346427754732632">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="536549261800356" type="PlayerBox">
