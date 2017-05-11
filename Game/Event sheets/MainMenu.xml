@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu</name>
     <events>
+        <variable constant="0" name="creditsVisible" sid="133881750094293" static="0" type="number">0</variable>
         <include>Contraptions</include>
         <event-block sid="533637482763394">
             <conditions>
@@ -27,6 +28,18 @@
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;MainTrack&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="577567245370607" type="CreditsHeading">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="106067402642071" type="CreditsText">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="991320994732586" type="CreditsTitle">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="447360931913423">
@@ -35,6 +48,11 @@
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">MenuNewGame</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="639284655745855" type="System">
+                    <param id="0" name="Variable">creditsVisible</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -64,6 +82,12 @@
             <actions>
                 <action id="-9" name="Destroy" sid="229183960426759" type="PlayerBox" />
                 <action id="-9" name="Destroy" sid="464652004194350" type="Player" />
+                <action id="0" name="Play" sid="231735101088602" type="Audio">
+                    <param id="0" name="Audio file">death_underwater</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="694645660273322">
@@ -96,6 +120,78 @@
             <actions>
                 <action id="-9" name="Destroy" sid="770362291097997" type="PlayerBox" />
                 <action id="-9" name="Destroy" sid="244544870864909" type="Player" />
+            </actions>
+        </event-block>
+        <event-block sid="620637823527441">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="241388987722333" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">MenuCredits</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="904404940678894" type="System">
+                    <param id="0" name="Variable">creditsVisible</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="541412852837993" type="MenuMainTitle">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="837558407363991" type="CreditsTitle">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="271476135844717" type="MenuNewGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="818310685668145" type="MenuCredits">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="942220905874582" type="CreditsHeading">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="402351133933872" type="CreditsText">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="484828256170150" type="System">
+                    <param id="0" name="Variable">creditsVisible</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177930941227327">
+            <conditions>
+                <condition id="1" name="On any click" sid="564799219760532" type="Mouse" />
+                <condition id="-14" name="Compare variable" sid="922466518089507" type="System">
+                    <param id="0" name="Variable">creditsVisible</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="316292973271555" type="MenuMainTitle">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="664777736165223" type="CreditsTitle">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="921498252759298" type="MenuNewGame">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="595818345124207" type="MenuCredits">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="193834951254885" type="CreditsHeading">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="547081264235261" type="CreditsText">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="239780185827901" type="System">
+                    <param id="0" name="Variable">creditsVisible</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
         </event-block>
     </events>

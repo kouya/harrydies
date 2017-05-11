@@ -12382,8 +12382,8 @@
                 </instance>
                 <instance type="MinigameScore" uid="524">
                     <properties>
-                        <text>Non-public preview.</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <text>Interface</text>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Courier,-25,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>

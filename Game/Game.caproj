@@ -2,7 +2,7 @@
 <c2project>
     <name>Game</name>
     <description></description>
-    <version>0.9.3</version>
+    <version>0.9.4</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -1802,16 +1802,24 @@
             <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
-        <object-type name="TiledBackground" sid="260252210794796">
+        <object-type name="MainMenuBackground" sid="260252210794796">
             <plugin id="TiledBg" />
-            <texture />
+            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Underwater\background-underwater.jpg" />
+        </object-type>
+        <object-type name="CreditsHeading" sid="301647341784243">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CreditsText" sid="515041683567011">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CreditsTitle" sid="926491028450880">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>Underwater.xml</layout>
-        <layout>Credits.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Player.xml</event-sheet>
@@ -1819,7 +1827,6 @@
         <event-sheet>UI.xml</event-sheet>
         <event-sheet>Contraptions.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
-        <event-sheet>Credits.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
