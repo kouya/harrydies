@@ -217,6 +217,18 @@
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="6" name="Stop" sid="522429962454022" type="Audio">
+                            <param id="0" name="Tag">&quot;UnderwaterMainTrack&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="108980838630730" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Play" sid="690857894405615" type="Audio">
+                            <param id="0" name="Audio file">Mega_Hyper_Ultrastorm</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;UnderwaterBossTrack&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="404222683287633">
@@ -903,6 +915,18 @@
                                 <action id="-10" name="Add to" sid="209857552900048" type="System">
                                     <param id="0" name="Variable">Score</param>
                                     <param id="1" name="Value">100 * ScoreMultiplier</param>
+                                </action>
+                                <action id="6" name="Stop" sid="748813520331937" type="Audio">
+                                    <param id="0" name="Tag">&quot;UnderwaterBossTrack&quot;</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="513579173351731" type="System">
+                                    <param id="0" name="Seconds">0.5</param>
+                                </action>
+                                <action id="0" name="Play" sid="182536501389737" type="Audio">
+                                    <param id="0" name="Audio file">Bassa_Island_Game_Loop</param>
+                                    <param id="2" name="Loop">1</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;UnderwaterMainTrack&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
