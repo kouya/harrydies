@@ -7,11 +7,18 @@
         <include>GlobalVariables</include>
         <include>Contraptions</include>
         <variable constant="0" name="creditsVisible" sid="133881750094293" static="0" type="number">0</variable>
+        <comment>Also preload all level soundtracks.</comment>
         <event-block sid="533637482763394">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="772102941768008" type="System" />
             </conditions>
             <actions>
+                <action id="0" name="Play" sid="921125489084867" type="Audio">
+                    <param id="0" name="Audio file">Silly_Fun</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;MainTrack&quot;</param>
+                </action>
                 <action id="5" name="Set web font" sid="721457663942464" type="MenuNewGame">
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
@@ -23,12 +30,6 @@
                 <action id="5" name="Set web font" sid="180596172905447" type="MenuMainTitle">
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
-                </action>
-                <action id="0" name="Play" sid="921125489084867" type="Audio">
-                    <param id="0" name="Audio file">Silly_Fun</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;MainTrack&quot;</param>
                 </action>
                 <action id="5" name="Set web font" sid="577567245370607" type="CreditsHeading">
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
