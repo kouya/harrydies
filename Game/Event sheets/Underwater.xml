@@ -119,6 +119,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Preload Boss soundtrack at this checkpoint so it plays without delay.</comment>
                 <event-block sid="307896051110864">
                     <conditions>
                         <condition id="-1" name="Compare X" sid="233247174997570" type="PlayerBox">
@@ -158,6 +159,9 @@
                         <action id="-10" name="Add to" sid="469177372493504" type="System">
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="4" name="Preload" sid="499002090500023" type="Audio">
+                            <param id="0" name="Audio file">Mega_Hyper_Ultrastorm</param>
                         </action>
                     </actions>
                 </event-block>
