@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>UI</name>
     <events>
+        <include>GlobalVariables</include>
         <event-block sid="227638714329279">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="720597737933681" type="System" />
@@ -67,9 +68,6 @@
                 <condition id="-1" name="Every tick" sid="243878890761695" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="477970088744409" type="Score">
-                    <param id="0" name="Text">&quot;Score: &quot; &amp; Score &amp; &quot; (x&quot; &amp; ScoreMultiplier &amp; &quot;)&quot;</param>
-                </action>
                 <action id="0" name="Set text" sid="591607919286224" type="Diamonds">
                     <param id="0" name="Text">ZeroPad(Diamonds, 2)</param>
                 </action>
@@ -77,6 +75,32 @@
                     <param id="0" name="Text">zeropad(BlockBreakers, 2)</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="644637299203343">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="367964927217314" type="System">
+                            <param id="0" name="Variable">CheatMode</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="571291474975851" type="Score">
+                            <param id="0" name="Text">&quot;Score: &quot; &amp; Score &amp; &quot; (x&quot; &amp; ScoreMultiplier &amp; &quot;)&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="115783458932249">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="762146579712692" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="235731397954773" type="Score">
+                            <param id="0" name="Text">&quot;Score: CHEATER!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Debug</comment>
         <event-block sid="688816083550405">

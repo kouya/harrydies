@@ -3,8 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MainMenu</name>
     <events>
-        <variable constant="0" name="creditsVisible" sid="133881750094293" static="0" type="number">0</variable>
+        <variable constant="0" name="ClicksToActivateCheats" sid="472587697609074" static="0" type="number">10</variable>
+        <include>GlobalVariables</include>
         <include>Contraptions</include>
+        <variable constant="0" name="creditsVisible" sid="133881750094293" static="0" type="number">0</variable>
         <event-block sid="533637482763394">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="772102941768008" type="System" />
@@ -193,6 +195,41 @@
                     <param id="1" name="Value">0</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="252065952830541">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="617994109652722" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Diamond</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="257303321750336" type="System">
+                    <param id="0" name="Variable">ClicksToActivateCheats</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="173091531863730">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="426969618163121" type="System">
+                            <param id="0" name="Variable">ClicksToActivateCheats</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="553290793319641" type="System">
+                            <param id="0" name="Variable">CheatMode</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="255500036254771" type="MenuNewGame">
+                            <param id="0" name="Text">&quot;I want to cheat!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

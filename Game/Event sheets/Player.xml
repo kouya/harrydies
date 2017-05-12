@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
+        <include>GlobalVariables</include>
         <variable constant="0" name="ScoreMultiplier" sid="996606841063796" static="0" type="number">1</variable>
-        <variable constant="0" name="CheatMode" sid="358312632353869" static="0" type="number">0</variable>
         <variable constant="0" name="Diamonds" sid="382441494681608" static="0" type="number">0</variable>
         <variable constant="0" name="PlayerDeaths" sid="421075115902716" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="332583175606476" static="0" type="number">0</variable>
@@ -346,46 +346,5 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="278890965667686" title="Dev Settings">
-            <sub-events>
-                <event-block sid="934804806095181">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="756410466666156" type="System" />
-                    </conditions>
-                    <actions />
-                    <sub-events>
-                        <event-block sid="786514093589532">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="102968459978049" type="System">
-                                    <param id="0" name="Variable">CheatMode</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">1</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-9" name="Set value" sid="929020479476354" type="System">
-                                    <param id="0" name="Variable">PlayerSpawnX</param>
-                                    <param id="1" name="Value">480</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="318931340729344" type="System">
-                                    <param id="0" name="Variable">PlayerSpawnY</param>
-                                    <param id="1" name="Value">896</param>
-                                </action>
-                                <action id="-1" name="Set X" sid="562005502555855" type="PlayerBox">
-                                    <param id="0" name="X">PlayerSpawnX</param>
-                                </action>
-                                <action id="-2" name="Set Y" sid="488448780142535" type="PlayerBox">
-                                    <param id="0" name="Y">PlayerSpawnY</param>
-                                </action>
-                                <action id="-9" name="Set value" sid="709726305618519" type="System">
-                                    <param id="0" name="Variable">LastCheckpoint</param>
-                                    <param id="1" name="Value">3</param>
-                                </action>
-                            </actions>
-                        </event-block>
-                    </sub-events>
-                </event-block>
-            </sub-events>
-        </event-group>
     </events>
 </c2eventsheet>
