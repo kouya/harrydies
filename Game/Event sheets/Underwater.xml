@@ -736,6 +736,12 @@
                                     <param id="1" name="Layer">3</param>
                                     <param id="2" name="Image point">0</param>
                                 </action>
+                                <action id="0" name="Play" sid="430897693436426" type="Audio">
+                                    <param id="0" name="Audio file">boss_shot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -761,6 +767,12 @@
                                     <param id="0" name="Object">SpikeBullet</param>
                                     <param id="1" name="Layer">3</param>
                                     <param id="2" name="Image point">0</param>
+                                </action>
+                                <action id="0" name="Play" sid="359305062870838" type="Audio">
+                                    <param id="0" name="Audio file">boss_shot</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -795,6 +807,12 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="918992881154563" type="SpikeBullet" />
+                        <action id="0" name="Play" sid="332412491139062" type="Audio">
+                            <param id="0" name="Audio file">death_spikes</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="307551342738325">
@@ -904,6 +922,12 @@
                                     <param id="2" name="Image point">0</param>
                                 </action>
                                 <action id="-9" name="Destroy" sid="216704412400214" type="UnderwaterBoss" />
+                                <action id="0" name="Play" sid="701533104586267" type="Audio">
+                                    <param id="0" name="Audio file">splat</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-10" name="Add to" sid="209857552900048" type="System">
                                     <param id="0" name="Variable">Score</param>
                                     <param id="1" name="Value">100 * ScoreMultiplier</param>
@@ -1381,7 +1405,7 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="127316535974161" type="System">
                                     <param id="0" name="Variable">LastCheckpoint</param>
-                                    <param id="1" name="Value">0</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>

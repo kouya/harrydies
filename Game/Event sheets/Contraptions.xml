@@ -316,6 +316,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="806481314829664" type="Audio">
+                                    <param id="0" name="Audio file">switch</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="5" name="Set frame" sid="854792468302728" type="BossSwitch">
                                     <param id="0" name="Frame number">1</param>
                                 </action>
@@ -343,6 +349,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="360847708108907" type="Audio">
+                                    <param id="0" name="Audio file">switch</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="5" name="Set frame" sid="946833800888778" type="BossSwitch">
                                     <param id="0" name="Frame number">2</param>
                                 </action>

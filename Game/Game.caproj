@@ -22,6 +22,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
@@ -1825,6 +1826,138 @@
         <object-type name="CreditsTitle" sid="926491028450880">
             <plugin id="Text" />
         </object-type>
+        <object-type name="RotatingJumpPad" sid="786575883198707">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="514445512593515">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="12" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="530916467590700" speed="20">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0.845703" y="0.511719" />
+                            <point x="1" y="0.839844" />
+                            <point x="0.75" y="1" />
+                            <point x="0.231445" y="1" />
+                            <point x="0" y="0.773438" />
+                            <point x="0.158203" y="0.509766" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -1877,6 +2010,12 @@
         <file name="death_bite.ogg" />
         <file name="dymamite_collect.m4a" />
         <file name="dymamite_collect.ogg" />
+        <file name="splat.m4a" />
+        <file name="splat.ogg" />
+        <file name="boss_shot.m4a" />
+        <file name="boss_shot.ogg" />
+        <file name="switch.m4a" />
+        <file name="switch.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Mega_Hyper_Ultrastorm.m4a" />
