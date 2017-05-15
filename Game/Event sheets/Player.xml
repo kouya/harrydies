@@ -28,6 +28,9 @@
                 <condition id="2" name="Key is down" sid="558919815205093" type="Keyboard">
                     <param id="0" name="Key">65 (A)</param>
                 </condition>
+                <condition id="4" name="Is touching object" sid="760482864151621" type="Touch">
+                    <param id="0" name="Object">TouchLeft</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="780808667679870" type="PlayerBox">
@@ -42,6 +45,9 @@
             <conditions>
                 <condition id="2" name="Key is down" sid="967732181908252" type="Keyboard">
                     <param id="0" name="Key">68 (D)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="436392403066951" type="Touch">
+                    <param id="0" name="Object">TouchRight</param>
                 </condition>
             </conditions>
             <actions>
@@ -58,6 +64,9 @@
                 <condition id="2" name="Key is down" sid="285135035133873" type="Keyboard">
                     <param id="0" name="Key">32 (Leer)</param>
                 </condition>
+                <condition id="4" name="Is touching object" sid="714158717687466" type="Touch">
+                    <param id="0" name="Object">TouchUp</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="819675327772436" type="PlayerBox">
@@ -72,6 +81,9 @@
                 </condition>
                 <condition id="2" name="Key is down" sid="842974011783016" type="Keyboard">
                     <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="456516453210460" type="Touch">
+                    <param id="0" name="Object">TouchDown</param>
                 </condition>
             </conditions>
             <actions>

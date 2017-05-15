@@ -11,8 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout active="1" order="3">Underwater</layout>
-        <event-sheet order="1">MainMenu</event-sheet>
+        <layout order="3">Underwater</layout>
+        <event-sheet active="1" order="1">MainMenu</event-sheet>
         <event-sheet order="2">UI</event-sheet>
         <event-sheet order="4">Contraptions</event-sheet>
         <event-sheet order="5">Underwater</event-sheet>
@@ -64,5 +64,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/MinigameTriggerEnd/" />
         <folder expanded="1" path="animation-folder/MinigameBlocker/" />
         <folder expanded="1" path="animation-folder/RotatingJumpPad/" />
+        <folder expanded="1" path="animation-folder/TouchLeft/" />
+        <folder expanded="1" path="animation-folder/TouchRight/" />
+        <folder expanded="1" path="animation-folder/TouchUp/" />
+        <folder expanded="1" path="animation-folder/TouchDown/" />
     </folders-expanded>
 </c2uistate>
