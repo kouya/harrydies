@@ -43,8 +43,15 @@
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="963609120469109" type="VersionText">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
                 <action id="4" name="Preload" sid="740792877768374" type="Audio">
                     <param id="0" name="Audio file">Bassa_Island_Game_Loop</param>
+                </action>
+                <action id="0" name="Set text" sid="945339275134207" type="VersionText">
+                    <param id="0" name="Text">&quot;v&quot; &amp; projectversion</param>
                 </action>
             </actions>
         </event-block>

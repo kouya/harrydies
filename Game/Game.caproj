@@ -2,7 +2,7 @@
 <c2project>
     <name>Game</name>
     <description></description>
-    <version>0.9.7</version>
+    <version>1.0b1</version>
     <author></author>
     <author-email></author-email>
     <author-website>http://</author-website>
@@ -1995,6 +1995,9 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="1" />
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="VersionText" sid="401042368661987">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
