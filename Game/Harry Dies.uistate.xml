@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">MainMenu</layout>
-        <layout order="3">Underwater</layout>
+        <layout order="0">MainMenu</layout>
+        <layout active="1" order="3">Underwater</layout>
         <event-sheet order="1">MainMenu</event-sheet>
         <event-sheet order="2">UI</event-sheet>
         <event-sheet order="4">Contraptions</event-sheet>
@@ -61,12 +61,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Portal/" />
         <folder expanded="1" path="animation-folder/Mermaid/" />
         <folder expanded="1" path="animation-folder/MinigameTriggerStart/" />
-        <folder expanded="1" path="animation-folder/MinigameTriggerEnd/" />
         <folder expanded="1" path="animation-folder/MinigameBlocker/" />
         <folder expanded="1" path="animation-folder/RotatingJumpPad/" />
         <folder expanded="1" path="animation-folder/TouchLeft/" />
         <folder expanded="1" path="animation-folder/TouchRight/" />
         <folder expanded="1" path="animation-folder/TouchUp/" />
         <folder expanded="1" path="animation-folder/TouchDown/" />
+        <folder expanded="1" path="animation-folder/MinigameBlockerExit/" />
     </folders-expanded>
 </c2uistate>
