@@ -11,13 +11,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">MainMenu</layout>
-        <layout order="3">Underwater</layout>
+        <layout active="1" order="3">Underwater</layout>
         <event-sheet order="1">MainMenu</event-sheet>
         <event-sheet order="2">UI</event-sheet>
         <event-sheet order="4">Contraptions</event-sheet>
         <event-sheet order="5">Underwater</event-sheet>
         <event-sheet order="6">GlobalVariables</event-sheet>
-        <event-sheet active="1" order="7">Player</event-sheet>
+        <event-sheet order="7">Player</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />

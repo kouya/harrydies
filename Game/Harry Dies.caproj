@@ -2,7 +2,7 @@
 <c2project>
     <name>Harry Dies</name>
     <description></description>
-    <version>1.0b2</version>
+    <version>1.0b3</version>
     <author>Oliver Feiler</author>
     <author-email>of@kiza.eu</author-email>
     <author-website>https://kiza.eu/harrydies</author-website>
@@ -842,11 +842,6 @@
         </object-type>
         <object-type name="EnemyBlockerfish" sid="627646412083471">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="632972447559842">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="376611415341975" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
@@ -1261,11 +1256,6 @@
         </object-type>
         <object-type name="EnemyBlockerfish2" sid="213572059679258">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="675709633346097">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743804574413153" speed="1">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5">
