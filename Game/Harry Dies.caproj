@@ -2019,7 +2019,7 @@
         <global-instance type="Mouse" uid="528" />
         <global-instance type="Touch" uid="935">
             <properties>
-                <use-mouse-input>Yes</use-mouse-input>
+                <use-mouse-input>No</use-mouse-input>
             </properties>
         </global-instance>
     </global-instances>

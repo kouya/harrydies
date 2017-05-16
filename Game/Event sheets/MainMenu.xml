@@ -266,7 +266,7 @@
         </event-block>
         <event-block any="1" sid="252065952830541">
             <conditions>
-                <condition id="6" name="On object clicked" sid="617994109652722" type="Mouse">
+                <condition id="6" name="On object clicked" sid="422934471387724" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">Diamond</param>
