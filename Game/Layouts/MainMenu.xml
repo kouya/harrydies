@@ -163,7 +163,7 @@
                 </instance>
                 <instance type="MenuMainTitle" uid="530">
                     <properties>
-                        <text>Main Title</text>
+                        <text>Harry Dies</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-128,400,0</font>
                         <color>255,255,255</color>

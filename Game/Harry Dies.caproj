@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>Game</name>
+    <name>Harry Dies</name>
     <description></description>
     <version>1.0b2</version>
-    <author></author>
-    <author-email></author-email>
-    <author-website>http://</author-website>
-    <app-id>eu.kiza.game</app-id>
+    <author>Oliver Feiler</author>
+    <author-email>of@kiza.eu</author-email>
+    <author-website>https://kiza.eu/harrydies</author-website>
+    <app-id>eu.kiza.harrydies</app-id>
     <unique-id>211m4rgv2ak5w</unique-id>
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
