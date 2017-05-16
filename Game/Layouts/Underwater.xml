@@ -13558,7 +13558,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>6432</x>
+                        <x>6464</x>
                         <y>7008</y>
                         <z>0</z>
                         <width>66</width>
@@ -13580,7 +13580,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>6528</x>
+                        <x>6560</x>
                         <y>7104</y>
                         <z>0</z>
                         <width>66</width>
@@ -20173,6 +20173,204 @@
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.510638297</hotspotY>
                         <angle>-0.502231896</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDeadlyDecoration" uid="941">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2381</x>
+                        <y>7213</y>
+                        <z>0</z>
+                        <width>63</width>
+                        <height>66</height>
+                        <depth>0</depth>
+                        <hotspotX>0.507936537</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.05804535</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDeadlyDecoration" uid="942">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2353.809082031</x>
+                        <y>7279.018066406</y>
+                        <z>0</z>
+                        <width>93.792800903</width>
+                        <height>98.259132385</height>
+                        <depth>0</depth>
+                        <hotspotX>0.507936537</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0.619270563</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="943">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>17</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3148</x>
+                        <y>7541</y>
+                        <z>0</z>
+                        <width>45.601615906</width>
+                        <height>44.910686493</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="944">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>17</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3168</x>
+                        <y>7531</y>
+                        <z>0</z>
+                        <width>45.601615906</width>
+                        <height>44.910686493</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="945">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>15</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2767</x>
+                        <y>7604</y>
+                        <z>0</z>
+                        <width>45.601615906</width>
+                        <height>44.910686493</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>-0.174632356</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="946">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>15</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2816</x>
+                        <y>7616</y>
+                        <z>0</z>
+                        <width>45.601615906</width>
+                        <height>44.910686493</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="947">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>15</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2784</x>
+                        <y>7599</y>
+                        <z>0</z>
+                        <width>45.601615906</width>
+                        <height>44.910686493</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="948">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>4</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>6144</x>
+                        <y>7597</y>
+                        <z>0</z>
+                        <width>66</width>
+                        <height>47</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.510638297</hotspotY>
+                        <angle>-0.246990904</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="UnderwaterDecoration" uid="949">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>20</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5952</x>
+                        <y>6864</y>
+                        <z>0</z>
+                        <width>66</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.507692337</hotspotY>
+                        <angle>3.141592741</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
