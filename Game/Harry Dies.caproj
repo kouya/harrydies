@@ -2064,6 +2064,12 @@
         <file name="switch.ogg" />
         <file name="portal.m4a" />
         <file name="portal.ogg" />
+        <file name="checkpoint_reached.m4a" />
+        <file name="checkpoint_reached.ogg" />
+        <file name="diamond_madness_bonus.m4a" />
+        <file name="diamond_madness_bonus.ogg" />
+        <file name="jump.m4a" />
+        <file name="jump.ogg" />
     </sounds-folder>
     <music-folder>
         <file name="Mega_Hyper_Ultrastorm.m4a" />

@@ -141,7 +141,14 @@
             <conditions>
                 <condition behavior="Platform" id="5" name="On jump" sid="657117091178270" type="PlayerBox" />
             </conditions>
-            <actions />
+            <actions>
+                <action id="0" name="Play" sid="243848185404831" type="Audio">
+                    <param id="0" name="Audio file">jump</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
             <sub-events>
                 <event-block sid="554121133754637">
                     <conditions>
@@ -251,7 +258,7 @@
                 <action id="0" name="Play" sid="299218627210965" type="Audio">
                     <param id="0" name="Audio file">diamond_collect</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">10</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
                 <action id="0" name="Call function" sid="495673599835087" type="Function">

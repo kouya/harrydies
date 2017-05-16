@@ -98,6 +98,12 @@
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">1</param>
                         </action>
+                        <action id="0" name="Play" sid="938211622637093" type="Audio">
+                            <param id="0" name="Audio file">checkpoint_reached</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="229547133958163">
@@ -139,6 +145,12 @@
                         <action id="-10" name="Add to" sid="368010506706840" type="System">
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="146417562986081" type="Audio">
+                            <param id="0" name="Audio file">checkpoint_reached</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -185,6 +197,12 @@
                         </action>
                         <action id="4" name="Preload" sid="499002090500023" type="Audio">
                             <param id="0" name="Audio file">Mega_Hyper_Ultrastorm</param>
+                        </action>
+                        <action id="0" name="Play" sid="609644994915656" type="Audio">
+                            <param id="0" name="Audio file">checkpoint_reached</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -285,6 +303,12 @@
                         <action id="-10" name="Add to" sid="867209244289690" type="System">
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Play" sid="571731304363793" type="Audio">
+                            <param id="0" name="Audio file">checkpoint_reached</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -469,6 +493,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="238641542382499" type="Audio">
+                                            <param id="0" name="Audio file">death_spikes</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Call function" sid="625696571386101" type="Function">
                                             <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
@@ -528,6 +558,12 @@
                                         </condition>
                                     </conditions>
                                     <actions>
+                                        <action id="0" name="Play" sid="432270896043715" type="Audio">
+                                            <param id="0" name="Audio file">death_spikes</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
                                         <action id="0" name="Call function" sid="155689818459866" type="Function">
                                             <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
                                             <param id="1" name="Parameter {n}"></param>
@@ -1191,10 +1227,6 @@
                         <action id="-15" name="Set visible" sid="523457037422145" type="OverdisplayBackdrop">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="5" name="Set playback rate" sid="913222081816270" type="Audio">
-                            <param id="0" name="Tag">&quot;UnderwaterMainTrack&quot;</param>
-                            <param id="1" name="Playback rate">1.5</param>
-                        </action>
                         <action id="0" name="Set text" sid="566162228307734" type="OverlayText">
                             <param id="0" name="Text">&quot;Diamond Madness! Ready...&quot;</param>
                         </action>
@@ -1212,6 +1244,10 @@
                         </action>
                         <action id="1" name="Append text" sid="799536643512832" type="OverlayText">
                             <param id="0" name="Text">&quot; GO!&quot;</param>
+                        </action>
+                        <action id="5" name="Set playback rate" sid="913222081816270" type="Audio">
+                            <param id="0" name="Tag">&quot;UnderwaterMainTrack&quot;</param>
+                            <param id="1" name="Playback rate">1.5</param>
                         </action>
                         <action id="-16" name="Wait" sid="798580387625032" type="System">
                             <param id="0" name="Seconds">1.5</param>
@@ -1278,6 +1314,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="448699274395352" type="Audio">
+                                    <param id="0" name="Audio file">diamond_madness_bonus</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="847064626185897" type="System">
                                     <param id="0" name="Variable">diamondMadnessIsStarted</param>
                                     <param id="1" name="Value">0</param>
@@ -1326,6 +1368,12 @@
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="0" name="Play" sid="884903148386570" type="Audio">
+                                    <param id="0" name="Audio file">diamond_madness_bonus</param>
+                                    <param id="2" name="Loop">0</param>
+                                    <param id="3" name="Volume">0</param>
+                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                </action>
                                 <action id="-9" name="Set value" sid="115996729936997" type="System">
                                     <param id="0" name="Variable">diamondMadnessIsStarted</param>
                                     <param id="1" name="Value">0</param>
