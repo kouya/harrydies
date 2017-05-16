@@ -102,27 +102,5 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <comment>Debug</comment>
-        <event-block sid="688816083550405">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="656005156628215" type="System" />
-            </conditions>
-            <actions>
-                <action id="5" name="Set web font" sid="349918799481678" type="DebugText">
-                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
-                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="902301209931936">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="921953904710479" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="529945007940612" type="DebugText">
-                    <param id="0" name="Text">&quot;v&quot; &amp; projectversion &amp; &quot;, FPS: &quot; &amp; fps</param>
-                </action>
-            </actions>
-        </event-block>
     </events>
 </c2eventsheet>

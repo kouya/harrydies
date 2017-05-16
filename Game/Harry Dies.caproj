@@ -1328,9 +1328,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="DebugText" sid="222184137183587">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="PlayerDead" sid="760545039491811">
             <plugin id="Sprite" />
             <animation-folder>
