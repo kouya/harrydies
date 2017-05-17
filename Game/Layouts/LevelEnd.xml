@@ -530,6 +530,33 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="NextLevelText" uid="1018">
+                    <properties>
+                        <text>We have escaped the dark Abyss of Death and must now make our way into the Valley of Madness. A land of of picturesque waterfalls, cozy caves and most likely certain death awaits us. – But, this also concludes the playable part of the game. Follow me on Google+ to get notified when world 2 is released. If you’d like to beta test while the game is being developed, get in touch with me. Bring your friends (and people you hate) to the game and watch them suffer!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>20</x>
+                        <y>666</y>
+                        <z>0</z>
+                        <width>1666</width>
+                        <height>200</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>

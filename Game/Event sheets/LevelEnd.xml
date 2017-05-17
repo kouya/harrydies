@@ -53,6 +53,10 @@
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="458710687759280" type="NextLevelText">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
                 <action id="0" name="Play" sid="971954207405823" type="Audio">
                     <param id="0" name="Audio file">Silly_Fun</param>
                     <param id="2" name="Loop">1</param>
@@ -75,20 +79,6 @@
                         </action>
                     </actions>
                     <sub-events>
-                        <event-block sid="449370107688019">
-                            <conditions>
-                                <condition id="-14" name="Compare variable" sid="536396032236371" type="System">
-                                    <param id="0" name="Variable">Score</param>
-                                    <param id="1" name="Comparison">4</param>
-                                    <param id="2" name="Value">0</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="0" name="Set text" sid="311700802304647" type="LevelEndRating">
-                                    <param id="0" name="Text">&quot;With a positive score nonetheless!&quot;</param>
-                                </action>
-                            </actions>
-                        </event-block>
                         <event-block sid="987754691527396">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="818477048522113" type="System">
@@ -100,6 +90,58 @@
                             <actions>
                                 <action id="0" name="Set text" sid="645698609380484" type="LevelEndRating">
                                     <param id="0" name="Text">&quot;Judging from the score it was rather painful.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="449370107688019">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="536396032236371" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="944893608280952" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">1000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="311700802304647" type="LevelEndRating">
+                                    <param id="0" name="Text">&quot;With a positive score nonetheless!&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="876890934188611">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="610801774908023" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1000</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="615004178032576" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">5000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="300687788275865" type="LevelEndRating">
+                                    <param id="0" name="Text">&quot;And achieved a quite respectable score.&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="329627756889141">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="773656866905886" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5000</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="524952302780049" type="LevelEndRating">
+                                    <param id="0" name="Text">&quot;With a score so high that it&apos;s hard to tell if you cheated!&quot;</param>
                                 </action>
                             </actions>
                         </event-block>

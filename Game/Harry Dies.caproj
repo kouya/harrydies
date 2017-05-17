@@ -2047,6 +2047,9 @@
         <object-type name="LevelEndDiamondsValue" sid="938595092813369">
             <plugin id="Text" />
         </object-type>
+        <object-type name="NextLevelText" sid="866950082182184">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
