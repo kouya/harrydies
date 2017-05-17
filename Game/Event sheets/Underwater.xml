@@ -3,7 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Underwater</name>
     <events>
-        <variable constant="0" name="ActiveLevel" sid="510097885831940" static="0" type="text">Underwater</variable>
         <variable constant="0" name="diamondMineTimeLeft" sid="995540229674571" static="0" type="number">666</variable>
         <variable constant="0" name="diamondMadnessBonusTime" sid="614626845179832" static="0" type="number">60</variable>
         <variable constant="0" name="diamondMadnessObjects" sid="875686515246053" static="0" type="number">17</variable>
@@ -39,7 +38,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="706462541135482" title="Sounds and Music">
+        <event-group description="" sid="706462541135482" title="Initial setup">
             <sub-events>
                 <event-block sid="867527011993458">
                     <conditions>
@@ -51,6 +50,10 @@
                             <param id="2" name="Loop">1</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;UnderwaterMainTrack&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="572501958250597" type="System">
+                            <param id="0" name="Variable">ActiveLevel</param>
+                            <param id="1" name="Value">&quot;Underwater&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1122,6 +1125,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-9" name="Set value" sid="689091854572972" type="System">
+                            <param id="0" name="Variable">DiamondsCollectedLevel</param>
+                            <param id="1" name="Value">Diamonds</param>
+                        </action>
                         <action id="-9" name="Set value" sid="116131538441571" type="System">
                             <param id="0" name="Variable">Diamonds</param>
                             <param id="1" name="Value">0</param>
@@ -1135,6 +1142,12 @@
                         <action id="11" name="Set collisions enabled" sid="945063176948223" type="Portal">
                             <param id="0" name="Collisions">1</param>
                         </action>
+                        <action id="0" name="Play" sid="412439323741346" type="Audio">
+                            <param id="0" name="Audio file">portal</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;PortalSound&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="746065730645665">
@@ -1144,6 +1157,10 @@
                         </condition>
                     </conditions>
                     <actions>
+                        <action id="-10" name="Add to" sid="476344579152656" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">10 * ScoreMultiplier</param>
+                        </action>
                         <action id="-9" name="Set value" sid="339033593987308" type="System">
                             <param id="0" name="Variable">LastCheckpoint</param>
                             <param id="1" name="Value">0</param>
@@ -1156,19 +1173,18 @@
                             <param id="0" name="Variable">BlockBreakers</param>
                             <param id="1" name="Value">0</param>
                         </action>
-                    </actions>
-                </event-block>
-                <event-block sid="823143527282753">
-                    <conditions>
-                        <condition id="-9" name="Is visible" sid="998100627167070" type="Portal" />
-                        <condition id="-3" name="Is on-screen" sid="240695735240944" type="Portal" />
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Play" sid="412439323741346" type="Audio">
-                            <param id="0" name="Audio file">portal</param>
-                            <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;PortalSound&quot;</param>
+                        <action id="-10" name="Add to" sid="102250704683558" type="System">
+                            <param id="0" name="Variable">DiamondsCollectedLevel</param>
+                            <param id="1" name="Value">Diamonds</param>
+                        </action>
+                        <action id="6" name="Stop" sid="881069601483506" type="Audio">
+                            <param id="0" name="Tag">&quot;PortalSound&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="565358976345053" type="Audio">
+                            <param id="0" name="Tag">&quot;UnderwaterMainTrack&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="991441266689818" type="System">
+                            <param id="0" name="Layout">LevelEnd</param>
                         </action>
                     </actions>
                 </event-block>
@@ -1470,11 +1486,11 @@
                             <actions>
                                 <action id="-9" name="Set value" sid="881263087073791" type="System">
                                     <param id="0" name="Variable">PlayerSpawnX</param>
-                                    <param id="1" name="Value">4574</param>
+                                    <param id="1" name="Value">5401</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="246644026941970" type="System">
                                     <param id="0" name="Variable">PlayerSpawnY</param>
-                                    <param id="1" name="Value">2336</param>
+                                    <param id="1" name="Value">460</param>
                                 </action>
                                 <action id="-1" name="Set X" sid="579459382033568" type="PlayerBox">
                                     <param id="0" name="X">PlayerSpawnX</param>

@@ -1985,11 +1985,74 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite" sid="348296718086449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790516390463141" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelEndUnderwaterTile" sid="257790002177562">
+            <plugin id="TiledBg" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Underwater\background-underwater.jpg" />
+        </object-type>
+        <object-type name="LevelEndUnderwaterObjects" sid="811860590499339">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="467925716935536" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LevelEndTitle" sid="861063395411479">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndSubtitle" sid="156066451031661">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndRating" sid="812914829216283">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndScore" sid="441635888100552">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDeaths" sid="508282471371210">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDiamondsCollected" sid="889712419334319">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDiamonds" sid="758123406904140">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text5" sid="611200690079570">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndScoreValue" sid="119165449443555">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDeathsValue" sid="345306716648506">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDiamondsCollectedValue" sid="460014209689466">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndDiamondsValue" sid="938595092813369">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>Underwater.xml</layout>
+        <layout>LevelEnd.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Player.xml</event-sheet>
@@ -1998,6 +2061,7 @@
         <event-sheet>Contraptions.xml</event-sheet>
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>GlobalVariables.xml</event-sheet>
+        <event-sheet>LevelEnd.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />
