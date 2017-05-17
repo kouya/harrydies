@@ -571,7 +571,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>789</x>
+                        <x>798</x>
                         <y>758</y>
                         <z>0</z>
                         <width>64</width>
@@ -593,7 +593,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>346</x>
+                        <x>356</x>
                         <y>691</y>
                         <z>0</z>
                         <width>64</width>
@@ -637,7 +637,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1623</x>
+                        <x>1635</x>
                         <y>819</y>
                         <z>0</z>
                         <width>64</width>
@@ -659,7 +659,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1562</x>
+                        <x>1570</x>
                         <y>373</y>
                         <z>0</z>
                         <width>64</width>
@@ -681,7 +681,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1253</x>
+                        <x>1247</x>
                         <y>755</y>
                         <z>0</z>
                         <width>64</width>
@@ -725,7 +725,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>607</x>
+                        <x>605</x>
                         <y>756</y>
                         <z>0</z>
                         <width>64</width>
@@ -981,7 +981,7 @@
                 </instance>
                 <instance type="CreditsHeading" uid="570">
                     <properties>
-                        <text>Sound Effects</text>
+                        <text>Incredible Sound Effects</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
@@ -997,7 +997,7 @@
                         <x>64</x>
                         <y>800</y>
                         <z>0</z>
-                        <width>352</width>
+                        <width>416</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -1008,7 +1008,7 @@
                 </instance>
                 <instance type="CreditsHeading" uid="572">
                     <properties>
-                        <text>Game Design, Levels, Graphics</text>
+                        <text>A super relaxing platformer by</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
@@ -1035,7 +1035,7 @@
                 </instance>
                 <instance type="CreditsHeading" uid="567">
                     <properties>
-                        <text>Music</text>
+                        <text>Insane Music</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
@@ -1062,7 +1062,7 @@
                 </instance>
                 <instance type="CreditsText" uid="573">
                     <properties>
-                        <text>Oliver Feiler, https://kiza.eu/</text>
+                        <text>Oliver Feiler, https://kiza.eu/        (The title is a lie, btw.)</text>
                         <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-27,400,0</font>
                         <color>255,255,255</color>
@@ -1079,7 +1079,7 @@
                         <y>384</y>
                         <z>0</z>
                         <width>416</width>
-                        <height>64</height>
+                        <height>96</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
