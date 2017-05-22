@@ -532,8 +532,8 @@
                 </instance>
                 <instance type="NextLevelText" uid="1018">
                     <properties>
-                        <text>We have escaped the dark Abyss of Death and must now make our way into the Valley of Madness. A land of of picturesque waterfalls, cozy caves and most likely certain death awaits us. – But, this also concludes the playable part of the game. Follow me on Google+ to get notified when world 2 is released. If you’d like to beta test while the game is being developed, get in touch with me. Bring your friends (and people you hate) to the game and watch them suffer!</text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <text>We have escaped the dark Abyss of Death and must now make our way into the Valley of Madness. A land of of picturesque waterfalls, cozy caves and most likely certain death awaits us. – But, this also concludes the playable part of the game. Follow me on Google+ or Twitter to get notified when world 2 is released. Bring your friends (and people you hate) to the game and watch them suffer!</text>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
@@ -549,7 +549,130 @@
                         <y>666</y>
                         <z>0</z>
                         <width>1666</width>
-                        <height>200</height>
+                        <height>150</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Twitter" uid="1034">
+                    <properties>
+                        <type>Follow</type>
+                        <share>kizaboom</share>
+                        <text></text>
+                        <via></via>
+                        <hashtags>#harrydiesgame</hashtags>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <count>Horizontal</count>
+                        <size>Large</size>
+                        <language>en</language>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>356</x>
+                        <y>834</y>
+                        <z>0</z>
+                        <width>80</width>
+                        <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                    </world>
+                </instance>
+                <instance type="GooglePlus" uid="1036">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>852</x>
+                        <y>850</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Paypal" uid="221">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1186</x>
+                        <y>849</y>
+                        <z>0</z>
+                        <width>110</width>
+                        <height>34</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="PaypalText" uid="986">
+                    <properties>
+                        <text>All proceeds go to harry&apos;s hospital bill! (That is a lie)</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1124</x>
+                        <y>884</y>
+                        <z>0</z>
+                        <width>558</width>
+                        <height>76</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LevelEndBackToMain" uid="987">
+                    <properties>
+                        <text>Reload to restart the torture!</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-24,400,0</font>
+                        <color>255,255,255</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1144</x>
+                        <y>518</y>
+                        <z>0</z>
+                        <width>472</width>
+                        <height>85</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

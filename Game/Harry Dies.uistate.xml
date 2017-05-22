@@ -13,13 +13,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="0">MainMenu</layout>
         <layout order="3">Underwater</layout>
         <layout order="9">LevelEnd</layout>
-        <event-sheet order="1">MainMenu</event-sheet>
+        <event-sheet active="1" order="1">MainMenu</event-sheet>
         <event-sheet order="2">UI</event-sheet>
         <event-sheet order="4">Contraptions</event-sheet>
         <event-sheet order="5">Underwater</event-sheet>
         <event-sheet order="6">GlobalVariables</event-sheet>
         <event-sheet order="7">Player</event-sheet>
-        <event-sheet active="1" order="8">LevelEnd</event-sheet>
+        <event-sheet order="8">LevelEnd</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -70,7 +70,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/TouchUp/" />
         <folder expanded="1" path="animation-folder/TouchDown/" />
         <folder expanded="1" path="animation-folder/MinigameBlockerExit/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/LevelEndUnderwaterObjects/" />
+        <folder expanded="1" path="animation-folder/GooglePlus/" />
+        <folder expanded="1" path="animation-folder/Paypal/" />
     </folders-expanded>
 </c2uistate>

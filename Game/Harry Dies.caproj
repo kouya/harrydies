@@ -2,7 +2,7 @@
 <c2project>
     <name>Harry Dies</name>
     <description></description>
-    <version>1.0b4</version>
+    <version>1.0</version>
     <author>Oliver Feiler</author>
     <author-email>of@kiza.eu</author-email>
     <author-website>https://kiza.eu/harrydies</author-website>
@@ -11,6 +11,7 @@
     <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
@@ -19,6 +20,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="Twitter" version="1">Twitter</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -1985,17 +1987,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite" sid="348296718086449">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="790516390463141" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="LevelEndUnderwaterTile" sid="257790002177562">
             <plugin id="TiledBg" />
             <texture original-source="X:\Projects\Harry_Dies\Artwork\Underwater\background-underwater.jpg" />
@@ -2050,6 +2041,56 @@
         <object-type name="NextLevelText" sid="866950082182184">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Twitter" sid="506862478444672">
+            <plugin id="Twitter" />
+        </object-type>
+        <object-type name="Browser" sid="367975533718861">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="GooglePlus" sid="106130557439888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="920693023821250" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="X:\Projects\Harry_Dies\Artwork_3rd_party\gplus-64.png">
+                        <collision-poly>
+                            <point x="0.171875" y="0.171875" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.828125" y="0.171875" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.828125" y="0.828125" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.171875" y="0.828125" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Paypal" sid="203295094314598">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="688745598518257" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="X:\Projects\Harry_Dies\Artwork_3rd_party\silver-pill-paypal-34px.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.147059" />
+                            <point x="0.5" y="0" />
+                            <point x="0.954545" y="0.147059" />
+                            <point x="1" y="0.5" />
+                            <point x="0.954545" y="0.852941" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0454545" y="0.852941" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PaypalText" sid="907486974307157">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelEndBackToMain" sid="563495960275501">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2089,6 +2130,7 @@
                 <use-mouse-input>No</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Browser" uid="1035" />
     </global-instances>
     <sounds-folder>
         <file name="jump_pad.m4a" />

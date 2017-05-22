@@ -57,11 +57,22 @@
                     <param id="0" name="Family name">&quot;Galindo&quot;</param>
                     <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
                 </action>
+                <action id="5" name="Set web font" sid="830841928471515" type="PaypalText">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
+                <action id="5" name="Set web font" sid="918998205631691" type="LevelEndBackToMain">
+                    <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                    <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                </action>
                 <action id="0" name="Play" sid="971954207405823" type="Audio">
                     <param id="0" name="Audio file">Silly_Fun</param>
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;LevelEndTrack&quot;</param>
+                </action>
+                <action id="-8" name="Set angle" sid="930797282299352" type="LevelEndBackToMain">
+                    <param id="0" name="Angle">-45</param>
                 </action>
             </actions>
             <sub-events>
@@ -236,6 +247,36 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-16" name="Wait" sid="767553676640171" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="162961971230011" type="NextLevelText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set visible" sid="135154577280689" type="Twitter">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="479000065341034" type="GooglePlus">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="559607010440227" type="Paypal">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="341825274578440" type="PaypalText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="443614997985699" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="0" name="Play" sid="531568537658837" type="Audio">
+                            <param id="0" name="Audio file">diamond_collect</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="414064826699619" type="LevelEndBackToMain">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="719503095058138">
@@ -331,6 +372,36 @@
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
+                        <action id="-16" name="Wait" sid="329708479155065" type="System">
+                            <param id="0" name="Seconds">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="751164425106151" type="NextLevelText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set visible" sid="976038014308631" type="Twitter">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="710642554658789" type="GooglePlus">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="146488071354948" type="Paypal">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="482583640591190" type="PaypalText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="794761413970463" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="0" name="Play" sid="566282974126182" type="Audio">
+                            <param id="0" name="Audio file">diamond_collect</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="935033311866826" type="LevelEndBackToMain">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                     </actions>
                     <sub-events>
                         <event-block sid="766205454624463">
@@ -353,6 +424,42 @@
                     </sub-events>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block any="1" sid="442334336331963">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="882309625545061" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GooglePlus</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="884143900983495" type="Touch">
+                    <param id="0" name="Object">GooglePlus</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="381337567640667" type="Browser">
+                    <param id="0" name="URL">&quot;https://plus.google.com/collection/EflcRE&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="732143630170946">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="255428335291321" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Paypal</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="607861225942873" type="Touch">
+                    <param id="0" name="Object">Paypal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="740291223251860" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.paypal.me/kizaeu&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

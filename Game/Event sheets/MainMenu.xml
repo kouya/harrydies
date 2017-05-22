@@ -214,6 +214,12 @@
                         <action id="-15" name="Set visible" sid="686450602480698" type="CreditsText">
                             <param id="0" name="Visibility">1</param>
                         </action>
+                        <action id="0" name="Set visible" sid="814202352158984" type="Twitter">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="100428393344503" type="GooglePlus">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
                         <action id="-9" name="Set value" sid="724387167591481" type="System">
                             <param id="0" name="Variable">creditsVisible</param>
                             <param id="1" name="Value">1</param>
@@ -254,6 +260,12 @@
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="933674274873144" type="CreditsText">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="0" name="Set visible" sid="624342050805638" type="Twitter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="436902563204568" type="GooglePlus">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="348351630821816" type="System">
@@ -301,6 +313,42 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block any="1" sid="148541923274583">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="520082826904681" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">GooglePlus</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="904919602459187" type="Touch">
+                    <param id="0" name="Object">GooglePlus</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="992832704247570" type="Browser">
+                    <param id="0" name="URL">&quot;https://plus.google.com/collection/EflcRE&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="638217219549296">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="981659059812555" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Paypal</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="249747237235135" type="Touch">
+                    <param id="0" name="Object">Paypal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="808384673790331" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.paypal.me/kizaeu&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
