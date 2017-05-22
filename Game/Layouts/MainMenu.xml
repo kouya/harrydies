@@ -1336,31 +1336,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Twitter" uid="988">
-                    <properties>
-                        <type>Follow</type>
-                        <share>kizaboom</share>
-                        <text></text>
-                        <via></via>
-                        <hashtags>#harrydiesgame</hashtags>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <count>Horizontal</count>
-                        <size>Large</size>
-                        <language>en</language>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>800</x>
-                        <y>896</y>
-                        <z>0</z>
-                        <width>80</width>
-                        <height>30</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
                 <instance type="GooglePlus" uid="989">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -1371,8 +1346,30 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1160</x>
-                        <y>910</y>
+                        <x>1056</x>
+                        <y>896</y>
+                        <z>0</z>
+                        <width>64</width>
+                        <height>64</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Twitter" uid="1034">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>928</x>
+                        <y>896</y>
                         <z>0</z>
                         <width>64</width>
                         <height>64</height>

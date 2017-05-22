@@ -214,7 +214,7 @@
                         <action id="-15" name="Set visible" sid="686450602480698" type="CreditsText">
                             <param id="0" name="Visibility">1</param>
                         </action>
-                        <action id="0" name="Set visible" sid="814202352158984" type="Twitter">
+                        <action id="-15" name="Set visible" sid="483330618516582" type="Twitter">
                             <param id="0" name="Visibility">1</param>
                         </action>
                         <action id="-15" name="Set visible" sid="100428393344503" type="GooglePlus">
@@ -262,7 +262,7 @@
                         <action id="-15" name="Set visible" sid="933674274873144" type="CreditsText">
                             <param id="0" name="Visibility">0</param>
                         </action>
-                        <action id="0" name="Set visible" sid="624342050805638" type="Twitter">
+                        <action id="-15" name="Set visible" sid="984905929716384" type="Twitter">
                             <param id="0" name="Visibility">0</param>
                         </action>
                         <action id="-15" name="Set visible" sid="436902563204568" type="GooglePlus">
@@ -346,6 +346,24 @@
             <actions>
                 <action id="8" name="Open URL in new window" sid="808384673790331" type="Browser">
                     <param id="0" name="URL">&quot;https://www.paypal.me/kizaeu&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="694236549471986">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="986304807340374" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Twitter</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="399766633495715" type="Touch">
+                    <param id="0" name="Object">Twitter</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="261555156296183" type="Browser">
+                    <param id="0" name="URL">&quot;https://twitter.com/kizaboom&quot;</param>
                     <param id="1" name="Tag">&quot;NewWindow&quot;</param>
                 </action>
             </actions>

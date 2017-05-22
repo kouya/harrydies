@@ -20,7 +20,6 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
-        <plugin author="Scirra" id="Twitter" version="1">Twitter</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -2041,9 +2040,6 @@
         <object-type name="NextLevelText" sid="866950082182184">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Twitter" sid="506862478444672">
-            <plugin id="Twitter" />
-        </object-type>
         <object-type name="Browser" sid="367975533718861">
             <plugin id="Browser" />
         </object-type>
@@ -2090,6 +2086,25 @@
         </object-type>
         <object-type name="LevelEndBackToMain" sid="563495960275501">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Twitter" sid="977824766810693">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120385334874502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="X:\Projects\Harry_Dies\Artwork_3rd_party\twitter-64.png">
+                        <collision-poly>
+                            <point x="0.140625" y="0.140625" />
+                            <point x="0.5" y="0" />
+                            <point x="0.859375" y="0.140625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.859375" y="0.859375" />
+                            <point x="0.5" y="1" />
+                            <point x="0.140625" y="0.859375" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />
