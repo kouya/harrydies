@@ -25,6 +25,12 @@
                 <condition id="4" name="Is touching object" sid="760482864151621" type="Touch">
                     <param id="0" name="Object">TouchLeft</param>
                 </condition>
+                <condition id="5" name="Compare axis" sid="405981847542740" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="780808667679870" type="PlayerBox">
@@ -43,6 +49,12 @@
                 <condition id="4" name="Is touching object" sid="436392403066951" type="Touch">
                     <param id="0" name="Object">TouchRight</param>
                 </condition>
+                <condition id="5" name="Compare axis" sid="369230934078347" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" sid="543623867445838" type="PlayerBox">
@@ -60,6 +72,10 @@
                 </condition>
                 <condition id="4" name="Is touching object" sid="714158717687466" type="Touch">
                     <param id="0" name="Object">TouchUp</param>
+                </condition>
+                <condition id="3" name="Is button down" sid="383364518548238" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -83,6 +99,19 @@
             <actions>
                 <action behavior="Platform" id="12" name="Fall through" sid="236989494551037" type="PlayerBox" />
             </actions>
+            <sub-events>
+                <event-block sid="876046293950507">
+                    <conditions>
+                        <condition id="5" name="Compare axis" sid="841706121266232" type="Gamepad">
+                            <param id="0" name="Gamepad">0</param>
+                            <param id="1" name="Axis">1</param>
+                            <param id="2" name="Comparison">2</param>
+                            <param id="3" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
         <comment>Movement animations</comment>
         <event-block sid="571604102836834">

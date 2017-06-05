@@ -20,6 +20,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -2106,6 +2107,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Gamepad" sid="719651580820486">
+            <plugin id="gamepad" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -2146,6 +2150,11 @@
             </properties>
         </global-instance>
         <global-instance type="Browser" uid="1035" />
+        <global-instance type="Gamepad" uid="1042">
+            <properties>
+                <analog-deadzone>25</analog-deadzone>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder>
         <file name="jump_pad.m4a" />
