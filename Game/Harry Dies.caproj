@@ -81,7 +81,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
         <object-type name="PlayerBox" sid="324174469555609">
@@ -738,7 +738,7 @@
                     <behavior id="jumpthru" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
         <object-type name="UnderwaterBoss" sid="780750835312822">
@@ -1702,7 +1702,7 @@
         </object-type>
         <object-type name="NonSolidTilemap" sid="333542278366568">
             <plugin id="Tilemap" />
-            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
         <object-type name="Portal" sid="843245382779037">
@@ -1788,7 +1788,7 @@
                     <behavior id="solid" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="X:\Projects\Super_Torture_Box\Artwork\Common\tiles.png" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
         <object-type name="MainMenuBackground" sid="260252210794796">
