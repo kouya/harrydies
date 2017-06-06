@@ -2110,12 +2110,17 @@
         <object-type name="Gamepad" sid="719651580820486">
             <plugin id="gamepad" />
         </object-type>
+        <object-type name="TiledBackground" sid="641933329999632">
+            <plugin id="TiledBg" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Valley\background-waterfall.jpg" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>Underwater.xml</layout>
         <layout>LevelEnd.xml</layout>
+        <layout>Waterfalls.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Player.xml</event-sheet>
@@ -2125,6 +2130,7 @@
         <event-sheet>MainMenu.xml</event-sheet>
         <event-sheet>GlobalVariables.xml</event-sheet>
         <event-sheet>LevelEnd.xml</event-sheet>
+        <event-sheet>Waterfalls.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />

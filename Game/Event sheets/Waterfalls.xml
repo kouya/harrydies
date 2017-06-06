@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Waterfalls</name>
+    <events>
+        <include>Player</include>
+        <include>UI</include>
+        <include>Contraptions</include>
+    </events>
+</c2eventsheet>
