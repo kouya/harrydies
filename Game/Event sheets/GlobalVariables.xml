@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>GlobalVariables</name>
     <events>
+        <variable constant="0" name="PlayerSpawnY" sid="514430171332471" static="0" type="number">7552</variable>
+        <variable constant="0" name="PlayerSpawnX" sid="694114691907185" static="0" type="number">224</variable>
         <variable constant="0" name="ActiveLevel" sid="510097885831940" static="0" type="text">none</variable>
         <variable constant="0" name="BlockBreakers" sid="880481500150208" static="0" type="number">0</variable>
         <variable constant="0" name="ScoreMultiplier" sid="996606841063796" static="0" type="number">1</variable>

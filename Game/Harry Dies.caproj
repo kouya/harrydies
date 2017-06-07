@@ -2110,9 +2110,77 @@
         <object-type name="Gamepad" sid="719651580820486">
             <plugin id="gamepad" />
         </object-type>
-        <object-type name="TiledBackground" sid="641933329999632">
+        <object-type name="WaterfallBackground" sid="641933329999632">
             <plugin id="TiledBg" />
             <texture original-source="X:\Projects\Harry_Dies\Artwork\Valley\background-waterfall.jpg" />
+        </object-type>
+        <object-type name="Sprite" sid="449251983587533">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199474362577269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="WaterfallEnd" sid="916698415356498">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="214772452659941" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.67708">
+                        <collision-poly>
+                            <point x="0.00389105" y="0.21875" />
+                            <point x="0.253405" y="0.265625" />
+                            <point x="0.405642" y="0" />
+                            <point x="0.558366" y="0.53125" />
+                            <point x="0.889105" y="0" />
+                            <point x="0.996109" y="0.270833" />
+                            <point x="0.998055" y="0.989583" />
+                            <point x="0.00194553" y="0.989583" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.21552">
+                        <collision-poly>
+                            <point x="0.00194553" y="0.465517" />
+                            <point x="0.143969" y="0.0215517" />
+                            <point x="0.47179" y="0.355603" />
+                            <point x="0.69893" y="0" />
+                            <point x="0.994163" y="0.534483" />
+                            <point x="0.998055" y="0.991379" />
+                            <point x="0.00194553" y="0.991379" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FallingLog" sid="308347229225907">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="876784590113693">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="759451525468878" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1">
+                        <collision-poly>
+                            <point x="0" y="0.00194553" />
+                            <point x="1" y="0.00194553" />
+                            <point x="1" y="0.998055" />
+                            <point x="0.00769234" y="0.998055" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TilemapWaterfalls" sid="297888479915164">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="697678285177939">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
+            <tiles />
         </object-type>
     </object-folder>
     <families />

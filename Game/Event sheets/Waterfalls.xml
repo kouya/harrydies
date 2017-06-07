@@ -6,5 +6,165 @@
         <include>Player</include>
         <include>UI</include>
         <include>Contraptions</include>
+        <event-block sid="767754038162094">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="467935228549638" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="772122568417065" type="System">
+                    <param id="0" name="Variable">ActiveLevel</param>
+                    <param id="1" name="Value">&quot;Waterfalls&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="371025482753934" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">800</param>
+                </action>
+                <action id="-9" name="Set value" sid="324552945796977" type="System">
+                    <param id="0" name="Variable">PlayerSpawnY</param>
+                    <param id="1" name="Value">608</param>
+                </action>
+                <action behavior="Platform" id="6" name="Set max fall speed" sid="953798558785994" type="PlayerBox">
+                    <param id="0" name="Max fall speed">500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="537913859456678">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="458824976556987" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="6" name="Set max fall speed" sid="668650468875596" type="PlayerBox">
+                    <param id="0" name="Max fall speed">1500</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="131585053092622" title="Falling Logs">
+            <sub-events>
+                <variable constant="0" name="SizeX" sid="781734992321606" static="0" type="number">0</variable>
+                <variable constant="0" name="SizeY" sid="942859329382875" static="0" type="number">0</variable>
+                <variable constant="1" name="SIZERATIO" sid="833683754350743" static="0" type="number">3.9538</variable>
+                <event-block sid="856435117206331">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="496110344836956" type="System">
+                            <param id="0" name="Interval (seconds)">random(3) + 1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="261300159591728" type="System">
+                            <param id="0" name="Variable">SizeX</param>
+                            <param id="1" name="Value">random(80) + 50</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="384718048002686" type="System">
+                            <param id="0" name="Variable">SizeY</param>
+                            <param id="1" name="Value">SIZERATIO * SizeX</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="490503956619595" type="System">
+                            <param id="0" name="Object to create">FallingLog</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">random(1500) + 130</param>
+                            <param id="3" name="Y">1</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="110644067832664" type="FallingLog">
+                            <param id="0" name="Width">SizeX</param>
+                            <param id="1" name="Height">SizeY</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="366722246906934">
+                    <conditions>
+                        <condition id="-4" name="Is outside layout" sid="520132659389678" type="FallingLog" />
+                        <condition behavior="Platform" id="2" name="Is on floor" sid="741298803158945" type="FallingLog" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="891243732393057" type="FallingLog" />
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="260158740388211">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="820780534915573" type="PlayerBox">
+                            <param id="0" name="Object">FallingLog</param>
+                        </condition>
+                        <condition id="0" name="On collision with another object" sid="744754539501308" type="PlayerBox">
+                            <param id="0" name="Object">WaterfallEnd</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="496194172402856" type="Function">
+                            <param id="0" name="Name">&quot;PlayerDeath&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="711530759902988">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="442675918352877" type="PlayerBox">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">25000</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="6" name="Set max fall speed" sid="979189249672559" type="PlayerBox">
+                    <param id="0" name="Max fall speed">1500</param>
+                </action>
+                <action id="-9" name="Set value" sid="321308663706376" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">864</param>
+                </action>
+                <action id="-9" name="Set value" sid="242190594303819" type="System">
+                    <param id="0" name="Variable">PlayerSpawnX</param>
+                    <param id="1" name="Value">25728</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="185861879831833" title="Level warp Waterfalls">
+            <sub-events>
+                <event-block sid="283485753375420">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="750668956037052" type="Portal" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="450970406704674" type="Audio">
+                            <param id="0" name="Audio file">portal</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;PortalSound&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="211831780860023">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="139537587469700" type="PlayerBox">
+                            <param id="0" name="Object">Portal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="329671947115562" type="System">
+                            <param id="0" name="Variable">Score</param>
+                            <param id="1" name="Value">10 * ScoreMultiplier</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="300977615166331" type="System">
+                            <param id="0" name="Variable">LastCheckpoint</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="911540140095967" type="System">
+                            <param id="0" name="Variable">SwitchesActivated</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="935101692592081" type="System">
+                            <param id="0" name="Variable">BlockBreakers</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="6" name="Stop" sid="763447675884682" type="Audio">
+                            <param id="0" name="Tag">&quot;PortalSound&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="184709502256044" type="Audio">
+                            <param id="0" name="Tag">&quot;WaterfallsMainTrack&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

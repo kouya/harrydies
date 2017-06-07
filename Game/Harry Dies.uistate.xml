@@ -10,10 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Waterfalls</layout>
-        <layout order="2">Underwater</layout>
-        <event-sheet order="3">Underwater</event-sheet>
-        <event-sheet order="1">Waterfalls</event-sheet>
+        <layout order="0">Waterfalls</layout>
+        <event-sheet active="1" order="1">Waterfalls</event-sheet>
+        <event-sheet order="2">Underwater</event-sheet>
+        <event-sheet order="3">Player</event-sheet>
+        <event-sheet order="4">GlobalVariables</event-sheet>
+        <event-sheet order="5">MainMenu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -68,5 +70,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/GooglePlus/" />
         <folder expanded="1" path="animation-folder/Paypal/" />
         <folder expanded="1" path="animation-folder/Twitter/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/WaterfallEnd/" />
+        <folder expanded="1" path="animation-folder/FallingLog/" />
     </folders-expanded>
 </c2uistate>
