@@ -41,7 +41,7 @@
                             <param id="0" name="Text">&quot;Go to the Abyss of Death&quot;</param>
                         </action>
                         <action id="0" name="Set text" sid="225288113128706" type="LevelStartStory">
-                            <param id="0" name="Text">&quot;For an eternity the dragon Agryxyfa lived on the mountain of fire and his presence has kept an uneasy peace throughout the lands. No dared to challenge him and he kept all forces attempting to dethrone him at bay. But no more!&quot; &amp; newline &amp; &quot;The evil princess has enslaved the dragon and uses him to enforce her rule upon the land. Armies of knights in shining armor are marching over the land driving out everyone not to the princess’ liking. We must defeat the princess, free the dragon and restore peace to the lands!&quot;</param>
+                            <param id="0" name="Text">&quot;For an eternity the dragon Agryxyfa lived on the mountain of fire and his presence has kept an uneasy peace throughout the lands. None dared to challenge him and he kept all forces attempting to dethrone him at bay. But no more!&quot; &amp; newline &amp; &quot;The evil princess has enslaved the dragon and uses him to enforce her rule upon the land. Armies of knights in shining armor are marching over the land driving out everyone not to the princess’ liking. We must defeat the princess, free the dragon and restore peace to the lands!&quot;</param>
                         </action>
                     </actions>
                 </event-block>
