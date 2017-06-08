@@ -101,7 +101,7 @@
             <conditions>
                 <condition id="-2" name="Compare Y" sid="442675918352877" type="PlayerBox">
                     <param id="0" name="Comparison">4</param>
-                    <param id="1" name="Y co-ordinate">25000</param>
+                    <param id="1" name="Y co-ordinate">18400</param>
                 </condition>
             </conditions>
             <actions>
