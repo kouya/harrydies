@@ -46,7 +46,7 @@
                 <event-block sid="856435117206331">
                     <conditions>
                         <condition id="-6" name="Every X seconds" sid="496110344836956" type="System">
-                            <param id="0" name="Interval (seconds)">random(3) + 1</param>
+                            <param id="0" name="Interval (seconds)">random(2) + 1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -62,7 +62,7 @@
                             <param id="0" name="Object to create">FallingLog</param>
                             <param id="1" name="Layer">1</param>
                             <param id="2" name="X">random(1500) + 130</param>
-                            <param id="3" name="Y">1</param>
+                            <param id="3" name="Y">512</param>
                         </action>
                         <action id="-7" name="Set size" sid="110644067832664" type="FallingLog">
                             <param id="0" name="Width">SizeX</param>

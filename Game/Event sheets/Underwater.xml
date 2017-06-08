@@ -795,7 +795,7 @@
                         <event-block sid="964499587732336">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="933941797428649" type="System">
-                                    <param id="0" name="Interval (seconds)">random(2)</param>
+                                    <param id="0" name="Interval (seconds)">random(3) + 1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -827,7 +827,7 @@
                         <event-block sid="440319526979112">
                             <conditions>
                                 <condition id="-6" name="Every X seconds" sid="484439267174790" type="System">
-                                    <param id="0" name="Interval (seconds)">random(1)</param>
+                                    <param id="0" name="Interval (seconds)">random(2) + 1</param>
                                 </condition>
                             </conditions>
                             <actions>
@@ -1486,17 +1486,17 @@
                                 <condition id="-14" name="Compare variable" sid="255047211819292" type="System">
                                     <param id="0" name="Variable">CheatMode</param>
                                     <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">2</param>
+                                    <param id="2" name="Value">1</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action id="-9" name="Set value" sid="881263087073791" type="System">
                                     <param id="0" name="Variable">PlayerSpawnX</param>
-                                    <param id="1" name="Value">5401</param>
+                                    <param id="1" name="Value">480</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="246644026941970" type="System">
                                     <param id="0" name="Variable">PlayerSpawnY</param>
-                                    <param id="1" name="Value">460</param>
+                                    <param id="1" name="Value">896</param>
                                 </action>
                                 <action id="-1" name="Set X" sid="579459382033568" type="PlayerBox">
                                     <param id="0" name="X">PlayerSpawnX</param>
@@ -1506,7 +1506,7 @@
                                 </action>
                                 <action id="-9" name="Set value" sid="127316535974161" type="System">
                                     <param id="0" name="Variable">LastCheckpoint</param>
-                                    <param id="1" name="Value">4</param>
+                                    <param id="1" name="Value">3</param>
                                 </action>
                             </actions>
                         </event-block>
