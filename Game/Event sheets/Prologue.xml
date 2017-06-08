@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Prologue</name>
+    <events>
+        <include>GlobalVariables</include>
+        <event-block sid="981871922574897">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="936903456170006" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="586331287516717">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="854281534510014" type="System">
+                            <param id="0" name="Variable">ActiveLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PrologueUnderwater&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="994338423218427" type="Audio">
+                            <param id="0" name="Audio file">Bassa_Island_Game_Loop</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;UnderwaterMainTrack&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="586576048095307" type="LevelStartTitle">
+                            <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                            <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="968186474063961" type="LevelStartStory">
+                            <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                            <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                        </action>
+                        <action id="5" name="Set web font" sid="803860910771413" type="LevelStartLaunch">
+                            <param id="0" name="Family name">&quot;Galindo&quot;</param>
+                            <param id="1" name="CSS URL">&quot;https://fonts.googleapis.com/css?family=Galindo&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="391890417461848" type="LevelStartLaunch">
+                            <param id="0" name="Text">&quot;Go to the Abyss of Death&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="225288113128706" type="LevelStartStory">
+                            <param id="0" name="Text">&quot;For an eternity the dragon Agryxyfa lived on the mountain of fire and his presence has kept an uneasy peace throughout the lands. No dared to challenge him and he kept all forces attempting to dethrone him at bay. But no more!&quot; &amp; newline &amp; &quot;The evil princess has enslaved the dragon and uses him to enforce her rule upon the land. Armies of knights in shining armor are marching over the land driving out everyone not to the princess’ liking. We must defeat the princess, free the dragon and restore peace to the lands!&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block any="1" sid="917566744823758">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="168032140403326" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LevelStartLaunch</param>
+                </condition>
+                <condition id="17" name="On tap object" sid="992529886231096" type="Touch">
+                    <param id="0" name="Object">LevelStartLaunch</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="482668318684957">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="609498716374464" type="System">
+                            <param id="0" name="Variable">ActiveLevel</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;PrologueUnderwater&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="278954365190246" type="System">
+                            <param id="0" name="Layout">Underwater</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

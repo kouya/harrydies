@@ -2182,12 +2182,47 @@
             <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
             <tiles />
         </object-type>
+        <object-type name="LevelStartTilemap" sid="786814357230086">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="530935490448741">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Common\tiles.png" />
+            <tiles />
+        </object-type>
+        <object-type name="LevelStartTitle" sid="120235326992135">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelStartStory" sid="992241542753901">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelStartLaunch" sid="453027972514791">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LevelStartUnderwaterBackground" sid="212580475314550">
+            <plugin id="TiledBg" />
+            <texture original-source="X:\Projects\Harry_Dies\Artwork\Underwater\background-underwater.jpg" />
+        </object-type>
+        <object-type name="LevelStartUnderwaterObjects" sid="763633767239396">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="306625591307786" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>MainMenu.xml</layout>
         <layout>Underwater.xml</layout>
         <layout>LevelEnd.xml</layout>
+        <layout>Prologue.xml</layout>
         <layout>Waterfalls.xml</layout>
     </layout-folder>
     <event-folder>
@@ -2199,6 +2234,7 @@
         <event-sheet>GlobalVariables.xml</event-sheet>
         <event-sheet>LevelEnd.xml</event-sheet>
         <event-sheet>Waterfalls.xml</event-sheet>
+        <event-sheet>Prologue.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="4" />

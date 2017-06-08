@@ -67,8 +67,12 @@
                         <action id="6" name="Stop" sid="732399394481085" type="Audio">
                             <param id="0" name="Tag">&quot;MainTrack&quot;</param>
                         </action>
+                        <action id="-9" name="Set value" sid="990630178799954" type="System">
+                            <param id="0" name="Variable">ActiveLevel</param>
+                            <param id="1" name="Value">&quot;PrologueUnderwater&quot;</param>
+                        </action>
                         <action id="-2" name="Go to layout" sid="885826851784279" type="System">
-                            <param id="0" name="Layout">Underwater</param>
+                            <param id="0" name="Layout">Prologue</param>
                         </action>
                     </actions>
                 </event-block>
